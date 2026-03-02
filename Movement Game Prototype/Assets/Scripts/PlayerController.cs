@@ -29,6 +29,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float maxFallSpeed = -20f;
 
     [Header("Wall Cling")]
+    [SerializeField] private PhysicsMaterial2D wallClingMaterial;
+    [SerializeField] private PhysicsMaterial2D normalMaterial;
+    
     [SerializeField] private Transform wallCheck;
     [SerializeField] private float wallCheckDistance = 0.6f;
     [SerializeField] private float wallCheckHeight = 0.5f;
@@ -70,6 +73,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float bounceEndBoost = 12f;
 
     private Rigidbody2D rb;
+    private Collider2D coll;
     private Animator animator;
 
     private float horizontalInput;
@@ -131,6 +135,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        coll = GetComponent<Collider2D>();
         rb = GetComponent<Rigidbody2D>();
         originalGravityScale = rb.gravityScale;
 
@@ -562,6 +567,8 @@ public class PlayerController : MonoBehaviour
         if (PlayerManager.Instance.WallJumpUnlocked)
         {
             unlockedWallJump = true;
+            coll.sharedMaterial = wallClingMaterial;
+
         }
         else if (!PlayerManager.Instance.WallJumpUnlocked)
         {
