@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     private float bouncePadDuration;
     
-    [Header("UnlockedAbilities")]
+    [Header("Unlocked Abilities")]
     //Add these values into a player manager singleton later
     [SerializeField] private bool unlockedDash;
     [SerializeField] private bool unlockedHook;
