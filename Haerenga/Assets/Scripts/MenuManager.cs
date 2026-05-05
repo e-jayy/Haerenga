@@ -12,6 +12,11 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject _controllerMenuCanvasGO;
     [SerializeField] private GameObject _inventoryCanvasGO;
 
+    [Header("Inventory Information")]
+    [SerializeField] private GameObject _starInfo1Inventory;
+    [SerializeField] private GameObject _starInfo2Inventory;
+
+
     [Header("Player Scripts")]
     [SerializeField] private PlayerController _playerController;
 
@@ -116,6 +121,7 @@ public class MenuManager : MonoBehaviour
     {
         _inventoryCanvasGO.SetActive(true);
         _mainMenuCanvasGO.SetActive(false);
+        CheckInventory();
 
         EventSystem.current.SetSelectedGameObject(_inventoryMenuFirst);
     }
@@ -126,6 +132,7 @@ public class MenuManager : MonoBehaviour
         _settingsMenuCanvasGO.SetActive(false);
         _keyboardMenuCanvasGO.SetActive(false);
         _controllerMenuCanvasGO.SetActive(false);
+        _inventoryCanvasGO.SetActive(false);
 
         EventSystem.current.SetSelectedGameObject(null);
     }
@@ -169,6 +176,7 @@ public class MenuManager : MonoBehaviour
 
     #region Settings Menu Button Functions
 
+
     public void OnSettingsBackPress()
     {
         OpenMainMenu();
@@ -198,5 +206,29 @@ public class MenuManager : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(_mainMenuFirst);
     }
 
+    #endregion
+
+    #region Inventory Check Functions
+
+    public void CheckInventory()
+    {
+        if(PlayerManager.Instance.StarInfo1Unlocked)
+        {
+            _starInfo1Inventory.SetActive(true);
+        }
+        else
+        {
+            _starInfo1Inventory.SetActive(false);
+        }
+
+        if(PlayerManager.Instance.StarInfo2Unlocked)
+        {
+            _starInfo2Inventory.SetActive(true);
+        }
+        else
+        {
+            _starInfo2Inventory.SetActive(false);
+        }
+    }
     #endregion
 }

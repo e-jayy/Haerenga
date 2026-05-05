@@ -11,11 +11,15 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private bool wallJumpUnlocked;
     [SerializeField] private bool doubleJumpUnlocked;
     [SerializeField] private bool hookUnlocked;
+    [SerializeField] private bool starInfo1Unlocked;
+    [SerializeField] private bool starInfo2Unlocked;
 
     public bool DashUnlocked => dashUnlocked;
     public bool WallJumpUnlocked => wallJumpUnlocked;
     public bool DoubleJumpUnlocked => doubleJumpUnlocked;
     public bool HookUnlocked => hookUnlocked;
+    public bool StarInfo1Unlocked => starInfo1Unlocked;
+    public bool StarInfo2Unlocked => starInfo2Unlocked;
 
     private void Awake()
     {
@@ -35,6 +39,9 @@ public class PlayerManager : MonoBehaviour
     public void UnlockWallJump()   => wallJumpUnlocked = true;
     public void UnlockDoubleJump() => doubleJumpUnlocked = true;
     public void UnlockHook()       => hookUnlocked = true;
+    public void UnlockStarInfo1()  => starInfo1Unlocked = true;
+    public void UnlockStarInfo2()  => starInfo2Unlocked = true;
+
     
 
     public void ResetAbilities()
@@ -43,6 +50,12 @@ public class PlayerManager : MonoBehaviour
         wallJumpUnlocked = false;
         doubleJumpUnlocked = false;
         hookUnlocked = false;
+    }
+
+    public void ResetStarInfo()
+    {
+        starInfo1Unlocked = false;
+        starInfo2Unlocked = false;
     }
 
     #endregion
