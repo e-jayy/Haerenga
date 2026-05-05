@@ -10,6 +10,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject _settingsMenuCanvasGO;
     [SerializeField] private GameObject _keyboardMenuCanvasGO;
     [SerializeField] private GameObject _controllerMenuCanvasGO;
+    [SerializeField] private GameObject _inventoryCanvasGO;
 
     [Header("Player Scripts")]
     [SerializeField] private PlayerController _playerController;
@@ -19,6 +20,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject _settingsMenuFirst;
     [SerializeField] private GameObject _keyboardMenuFirst;
     [SerializeField] private GameObject _controllerMenuFirst;
+    [SerializeField] private GameObject _inventoryMenuFirst;
 
     private bool isPaused;
 
@@ -28,6 +30,7 @@ public class MenuManager : MonoBehaviour
         _settingsMenuCanvasGO.SetActive(false);
         _keyboardMenuCanvasGO.SetActive(false);
         _controllerMenuCanvasGO.SetActive(false);
+        _inventoryCanvasGO.SetActive(false);
     }
 
     private void Update()
@@ -109,6 +112,14 @@ public class MenuManager : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(_controllerMenuFirst);
     }
 
+    private void OpenInventoryMenuHandle()
+    {
+        _inventoryCanvasGO.SetActive(true);
+        _mainMenuCanvasGO.SetActive(false);
+
+        EventSystem.current.SetSelectedGameObject(_inventoryMenuFirst);
+    }
+
     private void CloseAllMenus()
     {
         _mainMenuCanvasGO.SetActive(false);
@@ -136,6 +147,11 @@ public class MenuManager : MonoBehaviour
     public void OnControllerConfigPress()
     {
         OpenControllerConfigPressHandle();
+    }
+
+    public void OnInventoryPress()
+    {
+        OpenInventoryMenuHandle();
     }
 
     public void OnResumePress()
@@ -172,6 +188,14 @@ public class MenuManager : MonoBehaviour
         _settingsMenuCanvasGO.SetActive(true);
 
         EventSystem.current.SetSelectedGameObject(_settingsMenuFirst);
+    }
+
+    public void OnInventoryBackPress()
+    {
+        _inventoryCanvasGO.SetActive(false);
+        _mainMenuCanvasGO.SetActive(true);
+
+        EventSystem.current.SetSelectedGameObject(_mainMenuFirst);
     }
 
     #endregion
