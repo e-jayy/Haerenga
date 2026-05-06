@@ -10,10 +10,11 @@ public class SceneController : MonoBehaviour
     [Header("Respawn Settings")]
     public Vector2 respawnPosition;
     public bool hasCustomRespawn = false;
-    private float TransitionDuration = 0.5f;
+    private float TransitionDuration = 0.55f;
 
     private void Awake()
     {
+        transitionAnim.updateMode = AnimatorUpdateMode.UnscaledTime;
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
@@ -89,9 +90,11 @@ public class SceneController : MonoBehaviour
     public IEnumerator ReloadSceneCoroutine()
     {
         transitionAnim.SetTrigger("End");
-        yield return new WaitForSeconds(TransitionDuration);
+        Time.timeScale = 0f;
+        yield return new WaitForSecondsRealtime(TransitionDuration);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         transitionAnim.SetTrigger("Start");
+        Time.timeScale = 1f;
     }
 
     #endregion
