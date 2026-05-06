@@ -904,7 +904,7 @@ MonoBehaviour:
   _keyboardMenuCanvasGO: {fileID: 6004252585553632727}
   _controllerMenuCanvasGO: {fileID: 3842041444015142084}
   _inventoryCanvasGO: {fileID: 4414598077598066308}
-  _starInfo1Inventory: {fileID: 0}
+  _starInfo1Inventory: {fileID: 6067265973505095534}
   _starInfo2Inventory: {fileID: 920268930570790241}
   _playerController: {fileID: 0}
   _mainMenuFirst: {fileID: 1616220211153449473}
