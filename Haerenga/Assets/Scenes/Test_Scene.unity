@@ -9010,12 +9010,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4414598077598066308, guid: caff4cff4c667cb46b0dbdbeb0bd7ab3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5436343592245704932, guid: caff4cff4c667cb46b0dbdbeb0bd7ab3, type: 3}
       propertyPath: m_Type
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5436343592245704932, guid: caff4cff4c667cb46b0dbdbeb0bd7ab3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7eb15475003864c43b34fd857e88de58, type: 3}
     - target: {fileID: 5543966383992887920, guid: caff4cff4c667cb46b0dbdbeb0bd7ab3, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -80
@@ -9042,7 +9046,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6233620321891702539, guid: caff4cff4c667cb46b0dbdbeb0bd7ab3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 83
+      value: 62
       objectReference: {fileID: 0}
     - target: {fileID: 6233620321891702539, guid: caff4cff4c667cb46b0dbdbeb0bd7ab3, type: 3}
       propertyPath: m_ConstrainProportionsScale
@@ -9092,6 +9096,10 @@ PrefabInstance:
       propertyPath: _playerController
       value: 
       objectReference: {fileID: 1112645780}
+    - target: {fileID: 9144311047717471899, guid: caff4cff4c667cb46b0dbdbeb0bd7ab3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 62
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 570623354986434044, guid: caff4cff4c667cb46b0dbdbeb0bd7ab3, type: 3}
