@@ -19,6 +19,11 @@ public class VillageDialogueEnd : MonoBehaviour
         yield return new WaitForSeconds(0.55f);
         transitionAnim.SetTrigger("Start");
 
+        if(_playerController != null)
+        {
+            _playerController.enabled = true;
+        }
+
         foreach (GameObject obj in _objectsToDeactivate)
         {
             if (obj != null)
@@ -33,11 +38,6 @@ public class VillageDialogueEnd : MonoBehaviour
             {
                 obj.SetActive(true);
             }
-        }
-
-        if(_playerController != null)
-        {
-            _playerController.enabled = true;
         }
     }
 }

@@ -890,6 +890,12 @@ public class PlayerController : MonoBehaviour
         bubbleLaunchVelocity = velocity;
     }
 
+    public void StopMovement()
+    {
+        rb.linearVelocity = Vector2.zero;
+        animator.SetBool("Horizontal Input", false);
+    }
+
     public void TakeDamage()
     {
         SceneController.Instance.ReloadScene();
@@ -905,7 +911,7 @@ public class PlayerController : MonoBehaviour
         {
             sr.flipX = true;
         }
-        animator.SetFloat("Horizontal Speed", Mathf.Abs(InputManager.instance.MoveInput.x));
+        //animator.SetFloat("Horizontal Speed", Mathf.Abs(InputManager.instance.MoveInput.x));
         animator.SetBool("Horizontal Input", InputManager.instance.MoveInput.x != 0);
         animator.SetFloat("Vertical Velocity", rb.linearVelocity.y);
         animator.SetBool("IsGrounded", isGrounded);

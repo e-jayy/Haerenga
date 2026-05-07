@@ -18,6 +18,7 @@ public class VillageDialogueStart : MonoBehaviour
         if (_playerController != null)
         {
             _playerController.enabled = false;
+            _playerController.StopMovement();
         }
     }
 }

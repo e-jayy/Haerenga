@@ -8,7 +8,7 @@ public class Dialogue : MonoBehaviour
 {
     public AudioSource dialogueAS;
     public TextMeshProUGUI textComponent;
-    public GameObject objectToEnable;
+    public GameObject[] objectsToEnable;
     public string[] lines;
     public float textSpeed;
 
@@ -64,9 +64,12 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
-            if(objectToEnable != null)
+            if(objectsToEnable != null)
             {
-                objectToEnable.SetActive(true);
+                foreach (GameObject obj in objectsToEnable)
+                {
+                    obj.SetActive(true);
+                }
             }
             gameObject.SetActive(false);
         }

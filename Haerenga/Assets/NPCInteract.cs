@@ -3,6 +3,7 @@ using UnityEngine;
 public class NPCInteract : MonoBehaviour
 {
     private Collider2D npcCollider;
+    [SerializeField] private PlayerController _playerController;
     [SerializeField] GameObject[] _objectsToActivate;
     private void Start()
     {
