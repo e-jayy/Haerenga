@@ -7,6 +7,12 @@ public class VillageDialogueStart : MonoBehaviour
 
     void Start()
     {
+        if (_playerController != null)
+        {
+            _playerController.StopMovement();
+            _playerController.enabled = false;
+        }
+        
         foreach (GameObject obj in _objectsToActivate)
         {
             if (obj != null)
@@ -15,10 +21,5 @@ public class VillageDialogueStart : MonoBehaviour
             }
         }
 
-        if (_playerController != null)
-        {
-            _playerController.enabled = false;
-            _playerController.StopMovement();
-        }
     }
 }
