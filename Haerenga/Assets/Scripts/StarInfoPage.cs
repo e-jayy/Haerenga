@@ -7,6 +7,8 @@ public class StarInfoPage : MonoBehaviour
     [SerializeField] private bool hasBeenCollected = false;
     [SerializeField] private bool StarInfo1;
     [SerializeField] private bool StarInfo2;
+    [SerializeField] private bool StarInfo3;
+    [SerializeField] private bool StarInfo4;
     private bool isPaused;
     public void OnTriggerEnter2D(Collider2D collision)
     {
@@ -70,6 +72,14 @@ public class StarInfoPage : MonoBehaviour
         else if(StarInfo2)
         {
             PlayerManager.Instance.UnlockStarInfo2();
+        }
+        else if(StarInfo3)
+        {
+            PlayerManager.Instance.UnlockStarInfo3();
+        }
+        else if(StarInfo4)
+        {
+            PlayerManager.Instance.UnlockStarInfo4();
         }
     }
 }

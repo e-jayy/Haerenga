@@ -15,7 +15,8 @@ public class MenuManager : MonoBehaviour
     [Header("Inventory Information")]
     [SerializeField] private GameObject _starInfo1Inventory;
     [SerializeField] private GameObject _starInfo2Inventory;
-
+    [SerializeField] private GameObject _starInfo3Inventory;
+    [SerializeField] private GameObject _starInfo4Inventory;
 
     [Header("Player Scripts")]
     [SerializeField] private PlayerController _playerController;
@@ -228,6 +229,24 @@ public class MenuManager : MonoBehaviour
         else
         {
             _starInfo2Inventory.SetActive(false);
+        }
+
+        if(PlayerManager.Instance.StarInfo3Unlocked)
+        {
+            _starInfo3Inventory.SetActive(true);
+        }
+        else
+        {
+            _starInfo3Inventory.SetActive(false);
+        }
+
+        if(PlayerManager.Instance.StarInfo4Unlocked)
+        {
+            _starInfo4Inventory.SetActive(true);
+        }
+        else
+        {
+            _starInfo4Inventory.SetActive(false);
         }
     }
     #endregion

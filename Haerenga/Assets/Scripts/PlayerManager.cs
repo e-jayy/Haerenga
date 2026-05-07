@@ -13,6 +13,8 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private bool hookUnlocked;
     [SerializeField] private bool starInfo1Unlocked;
     [SerializeField] private bool starInfo2Unlocked;
+    [SerializeField] private bool starInfo3Unlocked;
+    [SerializeField] private bool starInfo4Unlocked;
 
     public bool DashUnlocked => dashUnlocked;
     public bool WallJumpUnlocked => wallJumpUnlocked;
@@ -20,7 +22,8 @@ public class PlayerManager : MonoBehaviour
     public bool HookUnlocked => hookUnlocked;
     public bool StarInfo1Unlocked => starInfo1Unlocked;
     public bool StarInfo2Unlocked => starInfo2Unlocked;
-
+    public bool StarInfo3Unlocked => starInfo3Unlocked;
+    public bool StarInfo4Unlocked => starInfo4Unlocked;
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -41,6 +44,8 @@ public class PlayerManager : MonoBehaviour
     public void UnlockHook()       => hookUnlocked = true;
     public void UnlockStarInfo1()  => starInfo1Unlocked = true;
     public void UnlockStarInfo2()  => starInfo2Unlocked = true;
+    public void UnlockStarInfo3()  => starInfo3Unlocked = true;
+    public void UnlockStarInfo4()  => starInfo4Unlocked = true;
 
     
 
@@ -56,6 +61,8 @@ public class PlayerManager : MonoBehaviour
     {
         starInfo1Unlocked = false;
         starInfo2Unlocked = false;
+        starInfo3Unlocked = false;
+        starInfo4Unlocked = false;
     }
 
     #endregion
