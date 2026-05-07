@@ -1,0 +1,22 @@
+using UnityEngine;
+
+public class NPCInteract : MonoBehaviour
+{
+    private Collider2D npcCollider;
+    [SerializeField] GameObject[] _objectsToActivate;
+    private void Start()
+    {
+        npcCollider = GetComponent<Collider2D>();
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            foreach (GameObject obj in _objectsToActivate)
+            {
+                obj.SetActive(true);
+            }
+        }
+    }
+}
