@@ -10,11 +10,11 @@ public class FishhookFragment : MonoBehaviour
     private bool isPaused;
     public void start()
     {
-        if(collectHook && PlayerManager.Instance.hookUnlocked)
+        if(hasBeenCollected && collectHook && PlayerManager.Instance.hookUnlocked)
         {
             Destroy(gameObject);
         }
-        else if(collectWallJump && PlayerManager.Instance.wallJumpUnlocked)
+        else if(hasBeenCollected && collectWallJump && PlayerManager.Instance.wallJumpUnlocked)
         {
             Destroy(gameObject);
         }
