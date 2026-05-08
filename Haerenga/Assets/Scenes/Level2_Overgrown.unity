@@ -33481,6 +33481,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Damage_3Wide
       objectReference: {fileID: 0}
+    - target: {fileID: 1948658592325497185, guid: 0df087fd701ed2c40ac08392ac4ecc8d, type: 3}
+      propertyPath: m_Size.x
+      value: 2.256442
+      objectReference: {fileID: 0}
+    - target: {fileID: 1948658592325497185, guid: 0df087fd701ed2c40ac08392ac4ecc8d, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.121778905
+      objectReference: {fileID: 0}
     - target: {fileID: 8279670414384898362, guid: 0df087fd701ed2c40ac08392ac4ecc8d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.5
@@ -36147,8 +36155,16 @@ PrefabInstance:
       value: Damage_4Wide
       objectReference: {fileID: 0}
     - target: {fileID: 1575106497492967214, guid: f51b581beae04c54fb31d816fcef0728, type: 3}
+      propertyPath: m_Size.x
+      value: 3.1795263
+      objectReference: {fileID: 0}
+    - target: {fileID: 1575106497492967214, guid: f51b581beae04c54fb31d816fcef0728, type: 3}
       propertyPath: m_Size.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1575106497492967214, guid: f51b581beae04c54fb31d816fcef0728, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.6602368
       objectReference: {fileID: 0}
     - target: {fileID: 1575106497492967214, guid: f51b581beae04c54fb31d816fcef0728, type: 3}
       propertyPath: m_Offset.y
@@ -82797,11 +82813,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5469677626199060438, guid: c26ecfa82ba8235499e13c97b4ecc157, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5
+      value: -5.5
       objectReference: {fileID: 0}
     - target: {fileID: 5469677626199060438, guid: c26ecfa82ba8235499e13c97b4ecc157, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11
+      value: 10.5
       objectReference: {fileID: 0}
     - target: {fileID: 5469677626199060438, guid: c26ecfa82ba8235499e13c97b4ecc157, type: 3}
       propertyPath: m_LocalPosition.z
@@ -96820,7 +96836,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8226372519085942478, guid: c411431286d7d1c41bb430d85da5901d, type: 3}
       propertyPath: bounceForceSideways
-      value: 16
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -108595,7 +108611,7 @@ Transform:
   m_GameObject: {fileID: 1568005030}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25.5, y: 8, z: -24.40312}
+  m_LocalPosition: {x: 0.5, y: 0, z: -24.40312}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
