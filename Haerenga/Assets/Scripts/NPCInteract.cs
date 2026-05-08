@@ -19,6 +19,7 @@ public class NPCInteract : MonoBehaviour
             {
                 obj.SetActive(true);
             }
+            npcCollider.enabled = false; // Disable the collider to prevent multiple triggers
         }
     }
 }
