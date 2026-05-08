@@ -7,14 +7,14 @@ public class PlayerManager : MonoBehaviour
 
 
     [Header("Unlocked Abilities")]
-    [SerializeField] private bool dashUnlocked;
-    [SerializeField] private bool wallJumpUnlocked;
-    [SerializeField] private bool doubleJumpUnlocked;
-    [SerializeField] private bool hookUnlocked;
-    [SerializeField] private bool starInfo1Unlocked;
-    [SerializeField] private bool starInfo2Unlocked;
-    [SerializeField] private bool starInfo3Unlocked;
-    [SerializeField] private bool starInfo4Unlocked;
+    public bool dashUnlocked;
+    public bool wallJumpUnlocked;
+    public bool doubleJumpUnlocked;
+    public bool hookUnlocked;
+    public bool starInfo1Unlocked;
+    public bool starInfo2Unlocked;
+    public bool starInfo3Unlocked;
+    public bool starInfo4Unlocked;
 
     public bool DashUnlocked => dashUnlocked;
     public bool WallJumpUnlocked => wallJumpUnlocked;
