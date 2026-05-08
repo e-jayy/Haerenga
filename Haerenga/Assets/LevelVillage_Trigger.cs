@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Level2_Trigger : MonoBehaviour
+public class LevelVillage_Trigger : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -8,7 +8,7 @@ public class Level2_Trigger : MonoBehaviour
         {
             Destroy(other.gameObject);
             SceneController.Instance.ResetSpawnData();
-            SceneController.Instance.LoadScene("Level2_Overgrown");
+            SceneController.Instance.LoadScene("Level_Village");
         }
     }
 }

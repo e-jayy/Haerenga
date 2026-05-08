@@ -9,11 +9,20 @@ EditorBuildSettings:
     path: Assets/Scenes/Start_Scene.unity
     guid: 44913032effe3b64da916d6be5a25a1c
   - enabled: 1
+    path: Assets/Scenes/Cutscene_Dialogue.unity
+    guid: dfc2837f4efdd8245bdfea6ff2d9fe20
+  - enabled: 1
     path: Assets/Scenes/Level1_Tutorial.unity
     guid: cf5db78e1c04dfe49ba34bebaa5a1b62
   - enabled: 1
+    path: Assets/Scenes/Level_Village.unity
+    guid: 8e0ec60d80c33bc4c98ca8a3a2c6027f
+  - enabled: 1
     path: Assets/Scenes/Level2_Overgrown.unity
     guid: 09d152a7ebc9ed74893e86101b83c87b
+  - enabled: 1
+    path: Assets/Scenes/Level3_Coral.unity
+    guid: 04d79d978c282cd49bec3ef65cf79a46
   - enabled: 1
     path: Assets/Scenes/End_Scene.unity
     guid: bbbdab5cbef61174a9cd7121254c624e
