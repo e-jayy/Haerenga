@@ -241,7 +241,6 @@ public class PlayerController : MonoBehaviour
                 //bounceLock = false;
             }
         }
-
     }
 
     private void GetHorizontalInput()
