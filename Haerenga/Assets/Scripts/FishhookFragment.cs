@@ -8,6 +8,17 @@ public class FishhookFragment : MonoBehaviour
     [SerializeField] private bool collectHook;
     [SerializeField] private bool collectWallJump;
     private bool isPaused;
+    public void start()
+    {
+        if(collectHook && PlayerManager.Instance.hookUnlocked)
+        {
+            Destroy(gameObject);
+        }
+        else if(collectWallJump && PlayerManager.Instance.wallJumpUnlocked)
+        {
+            Destroy(gameObject);
+        }
+    }
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))

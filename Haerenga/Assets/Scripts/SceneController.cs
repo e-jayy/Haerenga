@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class SceneController : MonoBehaviour
 {
     public static SceneController Instance;
-    [SerializeField] private Animator transitionAnim;
+    public Animator transitionAnim;
 
     [Header("Respawn Settings")]
     public Vector2 respawnPosition;

@@ -6,10 +6,11 @@ public class VillageDialogueEnd : MonoBehaviour
     [SerializeField] private PlayerController _playerController;
     [SerializeField] private GameObject[] _objectsToActivate;
     [SerializeField] private GameObject[] _objectsToDeactivate;
-    [SerializeField] private Animator transitionAnim;
+    private Animator transitionAnim;
 
     void Start()
     {
+        transitionAnim = SceneController.Instance.transitionAnim;
         StartCoroutine(TransitionToGameplay());
     }
 

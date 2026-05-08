@@ -10,6 +10,26 @@ public class StarInfoPage : MonoBehaviour
     [SerializeField] private bool StarInfo3;
     [SerializeField] private bool StarInfo4;
     private bool isPaused;
+
+    public void Start()
+    {
+        if(StarInfo1 && PlayerManager.Instance.starInfo1Unlocked)
+        {
+            Destroy(gameObject);
+        }
+        else if(StarInfo2 && PlayerManager.Instance.starInfo2Unlocked)
+        {
+            Destroy(gameObject);
+        }
+        else if(StarInfo3 && PlayerManager.Instance.starInfo3Unlocked)
+        {
+            Destroy(gameObject);
+        }
+        else if(StarInfo4 && PlayerManager.Instance.starInfo4Unlocked)
+        {
+            Destroy(gameObject);
+        }
+    }
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
