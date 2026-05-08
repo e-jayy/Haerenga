@@ -114,6 +114,9 @@ public class PlayerController : MonoBehaviour
     private float jumpBufferCounter;
     private int jumpsRemaining;
 
+    // Bounce Pad
+    public bool hasBounced;
+
     // Dash
     private bool isDashing;
     private bool canDash = true;
@@ -228,6 +231,17 @@ public class PlayerController : MonoBehaviour
 
         if (justWallJumped && wallJumpInputTimer <= 0f)
             justWallJumped = false;
+
+        if (hasBounced)
+        {
+            if (isGrounded || isGrappling)
+            {
+                SetBouncePadDurationHorizontal(0f);
+                hasBounced = false;
+                //bounceLock = false;
+            }
+        }
+
     }
 
     private void GetHorizontalInput()
@@ -845,7 +859,7 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    #region Damake and Death
+    #region Damage and Death
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Damage"))
@@ -871,11 +885,12 @@ public class PlayerController : MonoBehaviour
     public void SetBouncePadDurationHorizontal(float time)
     {
         bouncePadDurationHorizontal = time;
+
     }
 
     public void SetBounceLock()
     {
-        if (bouncePadDurationHorizontal >= 0f)
+        if (bouncePadDurationHorizontal > 0f)
         {
             bounceLock = true;
         } else

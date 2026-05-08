@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Serialization;
+using System.Collections;
 
 public class SideBouncePad : MonoBehaviour
 {
@@ -13,31 +14,43 @@ public class SideBouncePad : MonoBehaviour
 
     [Tooltip("Checked = bounce right, Unchecked = bounce left")]
     [SerializeField] private bool bounceRight = true;
-    
+
+    private PlayerController player;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        PlayerController player = other.GetComponent<PlayerController>();
-        
+        if (!other.CompareTag("Player"))
+            return;
+
+        // Cache player reference from the triggered collider
+        player = other.GetComponent<PlayerController>();
+
         if (player != null)
         {
             player.SetBouncePadDurationHorizontal(bouncePadTimer);
+            StartCoroutine(hasBouncedCoroutine());
         }
-        
-        
-        if (other.CompareTag("Player"))
-        {   
-            Rigidbody2D rb = other.GetComponent<Rigidbody2D>();
-            
-            // Reset horizontal velocity for consistent bounce
-            rb.linearVelocity = Vector2.zero;
-            
-            // Apply upward impulse
-            rb.AddForce(Vector2.up * bounceForceUp, ForceMode2D.Impulse);
 
-            float direction = bounceRight ? 1f : -1f;
+        Rigidbody2D rb = other.GetComponent<Rigidbody2D>();
+        if (rb == null)
+            return;
 
-            // Force exact sideways launch (most reliable method)
-            rb.AddForce(Vector2.right * direction * bounceForceSideways, ForceMode2D.Impulse);
-        }
+        // Reset horizontal velocity for consistent bounce
+        rb.linearVelocity = Vector2.zero;
+
+        // Apply upward impulse
+        rb.AddForce(Vector2.up * bounceForceUp, ForceMode2D.Impulse);
+
+        float direction = bounceRight ? 1f : -1f;
+
+        // Force exact sideways launch (most reliable method)
+        rb.AddForce(Vector2.right * direction * bounceForceSideways, ForceMode2D.Impulse);
+    }
+
+    private IEnumerator hasBouncedCoroutine()
+    {
+        yield return new WaitForSeconds(0.5f);
+        if (player != null)
+            player.hasBounced = true;
     }
 }

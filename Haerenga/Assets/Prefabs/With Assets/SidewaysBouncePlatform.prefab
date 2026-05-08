@@ -237,5 +237,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bounceForceUp: 7
   bounceForceSideways: 10
-  bouncePadTimer: 0.5
+  bouncePadTimer: 5
   bounceRight: 1

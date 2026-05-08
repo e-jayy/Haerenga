@@ -212,7 +212,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueAS: {fileID: 1340694030}
   textComponent: {fileID: 1015729345}
-  objectToEnable: {fileID: 298621331}
+  objectsToEnable:
+  - {fileID: 298621331}
   lines:
   - So you're finally awake, huh
   textSpeed: 0.05
@@ -564,7 +565,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueAS: {fileID: 915270178}
   textComponent: {fileID: 476842374}
-  objectToEnable: {fileID: 1547774177}
+  objectsToEnable:
+  - {fileID: 1547774177}
   lines:
   - ...
   - Where am I?
@@ -2747,7 +2749,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueAS: {fileID: 1340694030}
   textComponent: {fileID: 1063003990}
-  objectToEnable: {fileID: 196766350}
+  objectsToEnable:
+  - {fileID: 196766350}
   lines:
   - Don't worry you're safe
   - I brought you here after that horrible storm
