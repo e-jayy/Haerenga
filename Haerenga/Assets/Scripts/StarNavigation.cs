@@ -8,23 +8,31 @@ public class StarNavigation : MonoBehaviour
     [Header("Direction Check")]
     [SerializeField] private int directionValue; // 0–360 target value
     [SerializeField] private float tolerance = 3f;
+    private float horizontalInput;
 
     private void Update()
     {
+        RotateMap();
+
+        CheckDirectionInput();
+    }
+
+    private void RotateMap()
+    {
+        horizontalInput = InputManager.instance.MoveInput.x;
+
         float rotationAmount = 0f;
 
-        if (Input.GetKey(KeyCode.E))
+        if (horizontalInput > 0.1f)
             rotationAmount -= rotationSpeed * Time.deltaTime; // clockwise
 
-        if (Input.GetKey(KeyCode.Q))
+        if (horizontalInput < -0.1f)
             rotationAmount += rotationSpeed * Time.deltaTime; // counter-clockwise
 
         if (rotationAmount != 0f)
         {
             transform.Rotate(0f, 0f, rotationAmount);
         }
-
-        CheckDirectionInput();
     }
 
     private void CheckDirectionInput()

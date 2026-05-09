@@ -1,4 +1,5 @@
 using UnityEngine;
+using Unity.Cinemachine;
 
 public class CameraZoomAndPan : MonoBehaviour
 {
@@ -11,12 +12,13 @@ public class CameraZoomAndPan : MonoBehaviour
     [SerializeField] private float panSpeed = 5f;
     [SerializeField] private float minY = -5f;
     [SerializeField] private float maxY = 10f;
+    private float verticalInput;
 
-    private Camera cam;
+    private CinemachineCamera vcam;
 
     private void Awake()
     {
-        cam = GetComponent<Camera>();
+        vcam = GetComponent<CinemachineCamera>();
     }
 
     private void Update()
@@ -30,18 +32,21 @@ public class CameraZoomAndPan : MonoBehaviour
         float scroll = Input.GetAxis("Mouse ScrollWheel");
         if (scroll != 0f)
         {
-            cam.orthographicSize -= scroll * zoomSpeed;
-            cam.orthographicSize = Mathf.Clamp(cam.orthographicSize, minZoom, maxZoom);
+            float currentSize = vcam.Lens.OrthographicSize;
+            currentSize -= scroll * zoomSpeed;
+            currentSize = Mathf.Clamp(currentSize, minZoom, maxZoom);
+            vcam.Lens.OrthographicSize = currentSize;
         }
     }
 
     private void HandleVerticalMovement()
     {
         float vertical = 0f;
+        verticalInput = InputManager.instance.MoveInput.y;
 
-        if (Input.GetKey(KeyCode.W))
+        if (verticalInput > 0.1f)
             vertical = 1f;
-        else if (Input.GetKey(KeyCode.S))
+        else if (verticalInput < -0.1f)
             vertical = -1f;
 
         if (vertical != 0f)
