@@ -12,6 +12,8 @@ public class CameraZoomAndPan : MonoBehaviour
     [SerializeField] private float panSpeed = 5f;
     [SerializeField] private float minY = -5f;
     [SerializeField] private float maxY = 10f;
+    [Space(20)]
+    [SerializeField] private StarNavigation StarNavigation;
     private float verticalInput;
 
     private CinemachineCamera vcam;
@@ -23,6 +25,7 @@ public class CameraZoomAndPan : MonoBehaviour
 
     private void Update()
     {
+        if(StarNavigation.checkUIOn) return;
         HandleZoom();
         HandleVerticalMovement();
     }

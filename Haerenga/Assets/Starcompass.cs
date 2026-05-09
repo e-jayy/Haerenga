@@ -3,11 +3,11 @@ using UnityEngine;
 public class Starcompass : MonoBehaviour
 {
     [SerializeField] private Transform rotatingObject; // The object that rotates 0-360
-    [SerializeField] private RectTransform uiElement;   // The UI element to rotate in steps
+    [SerializeField] private RectTransform UIElement;   // The UI element to rotate in steps
 
     private void Update()
     {
-        if (rotatingObject == null || uiElement == null) return;
+        if (rotatingObject == null || UIElement == null) return;
 
         // Get the normalized rotation (0-360)
         float z = rotatingObject.eulerAngles.z;
@@ -23,6 +23,6 @@ public class Starcompass : MonoBehaviour
         float stepRotation = step * (360f / 32f);
 
         // Apply to UI element
-        uiElement.rotation = Quaternion.Euler(0f, 0f, stepRotation);
+        UIElement.rotation = Quaternion.Euler(0f, 0f, stepRotation);
     }
 }
