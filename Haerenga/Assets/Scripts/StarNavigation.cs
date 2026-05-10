@@ -76,7 +76,8 @@ public void ConfirmDirection()
 
     // Check village direction
     float villageAngleDiff = Mathf.DeltaAngle(currentZ, villageValue);
-    if (Mathf.Abs(villageAngleDiff) <= tolerance)
+    if (Mathf.Abs(villageAngleDiff) <= tolerance &&
+    PlayerManager.Instance.StarInfo1Unlocked && PlayerManager.Instance.StarInfo2Unlocked)
     {
         Debug.Log("Sailing to village!");
         SailToVillage();
@@ -85,7 +86,9 @@ public void ConfirmDirection()
 
     // Check level 2 direction
     float level2AngleDiff = Mathf.DeltaAngle(currentZ, level2Value);
-    if (Mathf.Abs(level2AngleDiff) <= tolerance)
+    if (Mathf.Abs(level2AngleDiff) <= tolerance &&
+    PlayerManager.Instance.StarInfo1Unlocked && PlayerManager.Instance.StarInfo2Unlocked
+    && PlayerManager.Instance.StarInfo3Unlocked) 
     {
         Debug.Log("Sailing to level 2!");
         SailToLevel2();
@@ -94,7 +97,8 @@ public void ConfirmDirection()
 
     // Check level 3 direction
     float level3AngleDiff = Mathf.DeltaAngle(currentZ, level3Value);
-    if (Mathf.Abs(level3AngleDiff) <= tolerance)
+    if (Mathf.Abs(level3AngleDiff) <= tolerance &&
+    PlayerManager.Instance.StarInfo1Unlocked && PlayerManager.Instance.StarInfo2Unlocked)
     {
         Debug.Log("Sailing to level 3!");
         SailToLevel3();
