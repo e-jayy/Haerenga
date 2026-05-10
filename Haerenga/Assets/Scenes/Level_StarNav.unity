@@ -3052,6 +3052,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 955862701100690872, guid: caff4cff4c667cb46b0dbdbeb0bd7ab3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.000061035156
+      objectReference: {fileID: 0}
     - target: {fileID: 1976125678178672125, guid: caff4cff4c667cb46b0dbdbeb0bd7ab3, type: 3}
       propertyPath: m_Name
       value: Menu
