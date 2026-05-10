@@ -58,7 +58,7 @@ public class StarInfoPage : MonoBehaviour
         Unpause();
     }
 
-        public void Pause()
+    public void Pause()
     {
         isPaused = true;
         Time.timeScale = 0f;

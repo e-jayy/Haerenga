@@ -3,10 +3,10 @@ using Unity.Cinemachine;
 
 public class CameraZoomAndPan : MonoBehaviour
 {
-    [Header("Zoom")]
-    [SerializeField] private float zoomSpeed = 5f;
-    [SerializeField] private float minZoom = 3f;
-    [SerializeField] private float maxZoom = 8f;
+    // [Header("Zoom")]
+    // [SerializeField] private float zoomSpeed = 5f;
+    // [SerializeField] private float minZoom = 3f;
+    // [SerializeField] private float maxZoom = 8f;
 
     [Header("Vertical Movement")]
     [SerializeField] private float panSpeed = 5f;
@@ -25,22 +25,22 @@ public class CameraZoomAndPan : MonoBehaviour
 
     private void Update()
     {
-        if(StarNavigation.checkUIOn) return;
-        HandleZoom();
+        if(StarNavigation.checkUIOn || StarNavigation.incorrectUIOn) return;
+        //HandleZoom();
         HandleVerticalMovement();
     }
 
-    private void HandleZoom()
-    {
-        float scroll = Input.GetAxis("Mouse ScrollWheel");
-        if (scroll != 0f)
-        {
-            float currentSize = vcam.Lens.OrthographicSize;
-            currentSize -= scroll * zoomSpeed;
-            currentSize = Mathf.Clamp(currentSize, minZoom, maxZoom);
-            vcam.Lens.OrthographicSize = currentSize;
-        }
-    }
+    // private void HandleZoom()
+    // {
+    //     float scroll = Input.GetAxis("Mouse ScrollWheel");
+    //     if (scroll != 0f)
+    //     {
+    //         float currentSize = vcam.Lens.OrthographicSize;
+    //         currentSize -= scroll * zoomSpeed;
+    //         currentSize = Mathf.Clamp(currentSize, minZoom, maxZoom);
+    //         vcam.Lens.OrthographicSize = currentSize;
+    //     }
+    // }
 
     private void HandleVerticalMovement()
     {

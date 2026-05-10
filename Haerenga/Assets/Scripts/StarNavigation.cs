@@ -8,18 +8,37 @@ public class StarNavigation : MonoBehaviour
     [SerializeField] private float rotationSpeed = 180f; // degrees per second
 
     [Header("Direction Check")]
-    [SerializeField] private int directionValue; // 0–360 target value
+    [SerializeField] [Range(0, 360)] private int villageValue;
+    [SerializeField] [Range(0, 360)] private int level2Value;
+    [SerializeField] [Range(0, 360)] private int level3Value; // 0–360 target value
     [SerializeField] private float tolerance = 3f;
     [Space(20)]
+    
     [SerializeField] private GameObject confirmChoiceCanvas;
+    [SerializeField] private GameObject incorrectChoiceCanvas;
     [SerializeField] private GameObject starUICanvas;
     [SerializeField] private GameObject _choiceMenuFirst;
     private float horizontalInput;
     public bool checkUIOn = false;
+    public bool incorrectUIOn = false;
+    private Animator transitionAnim;
+
+    private void Start()
+    {
+        transitionAnim = SceneController.Instance.transitionAnim;
+    }
 
     private void Update()
     {
-        if(checkUIOn) return;
+        if(incorrectUIOn)
+        {
+            if(InputManager.instance.JumpJustPressed)
+            {
+                CloseIncorrectChoiceUI();
+            }
+        }
+
+        if(checkUIOn ||incorrectUIOn) return;
         RotateMap();
         ChooseDirection();
     }
@@ -51,21 +70,88 @@ public class StarNavigation : MonoBehaviour
         }
     }
 
-    public void ConfirmDirection()
-    {
-        float currentZ = GetNormalizedZRotation();
-        // Proper circular comparison (handles 0/360 wrap)
-        float angleDiff = Mathf.DeltaAngle(currentZ, directionValue);
+public void ConfirmDirection()
+{
+    float currentZ = GetNormalizedZRotation();
 
-        if (Mathf.Abs(angleDiff) <= tolerance)
-        {
-            Debug.Log("congrats");
-        }
-        else
-        {
-            Debug.Log("fail");
-        }
+    // Check village direction
+    float villageAngleDiff = Mathf.DeltaAngle(currentZ, villageValue);
+    if (Mathf.Abs(villageAngleDiff) <= tolerance)
+    {
+        Debug.Log("Sailing to village!");
+        SailToVillage();
+        return; // Exit after successful navigation
     }
+
+    // Check level 2 direction
+    float level2AngleDiff = Mathf.DeltaAngle(currentZ, level2Value);
+    if (Mathf.Abs(level2AngleDiff) <= tolerance)
+    {
+        Debug.Log("Sailing to level 2!");
+        SailToLevel2();
+        return; // Exit after successful navigation
+    }
+
+    // Check level 3 direction
+    float level3AngleDiff = Mathf.DeltaAngle(currentZ, level3Value);
+    if (Mathf.Abs(level3AngleDiff) <= tolerance)
+    {
+        Debug.Log("Sailing to level 3!");
+        SailToLevel3();
+        return; // Exit after successful navigation
+    }
+
+    StartCoroutine(FailedToSail());
+}
+
+private IEnumerator FailedToSail()
+{
+    Debug.Log("Failed to sail in any direction, returning to star UI");
+    Debug.Log("fail");
+    transitionAnim.SetTrigger("End");
+    yield return new WaitForSeconds(0.55f);
+    transitionAnim.SetTrigger("Start");
+    DisableChoiceUI();
+    OpenIncorrectChoiceUI();
+}
+
+private void OpenIncorrectChoiceUI()
+{
+    incorrectUIOn = true;
+    incorrectChoiceCanvas.SetActive(true);
+    starUICanvas.SetActive(false);
+}
+
+private void CloseIncorrectChoiceUI()
+{
+    StartCoroutine(DisableIncorrectUIBool());
+    incorrectChoiceCanvas.SetActive(false);
+    starUICanvas.SetActive(true);
+}   
+
+private IEnumerator DisableIncorrectUIBool()
+{
+    yield return new WaitForSeconds(0.1f);
+    incorrectUIOn = false;
+}
+
+private void SailToVillage()
+{
+    // Village-specific logic
+    SceneController.Instance.LoadScene("Level_Village");
+}
+
+private void SailToLevel2()
+{
+    // Level 2-specific logic
+    SceneController.Instance.LoadScene("Level2_Overgrown");
+}
+
+private void SailToLevel3()
+{
+    // Level 3-specific logic
+    SceneController.Instance.LoadScene("Level3_Coral");
+}
     
     private void EnableChoiceUI()
     {
@@ -94,22 +180,5 @@ public class StarNavigation : MonoBehaviour
     {
         float z = transform.eulerAngles.z;
         return (z + 360f) % 360f;
-    }
-    public void CheckDirectionInput()
-    {
-        // Proper circular comparison (handles 0/360 wrap)
-
-
-        float currentZ = GetNormalizedZRotation();
-        float angleDiff = Mathf.DeltaAngle(currentZ, directionValue);
-
-        if (Mathf.Abs(angleDiff) <= tolerance)
-        {
-            Debug.Log("congrats");
-        }
-        else
-        {
-            Debug.Log("fail");
-        }
     }
 }
