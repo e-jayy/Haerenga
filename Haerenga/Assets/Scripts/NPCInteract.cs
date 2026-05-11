@@ -8,6 +8,11 @@ public class NPCInteract : MonoBehaviour
     private void Start()
     {
         npcCollider = GetComponent<Collider2D>();
+
+        if(PlayerManager.Instance.StarInfo1Unlocked && PlayerManager.Instance.StarInfo2Unlocked)
+        {
+            npcCollider.enabled = false; // Disable the collider to prevent interaction
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
