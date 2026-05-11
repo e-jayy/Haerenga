@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Level_Village.unity
     guid: 8e0ec60d80c33bc4c98ca8a3a2c6027f
   - enabled: 1
+    path: Assets/Scenes/Level_StarNav.unity
+    guid: a3e5ddc3a2aace143982a8a52e9f0af1
+  - enabled: 1
     path: Assets/Scenes/Level2_Overgrown.unity
     guid: 09d152a7ebc9ed74893e86101b83c87b
   - enabled: 1
