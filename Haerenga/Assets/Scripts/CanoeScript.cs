@@ -86,12 +86,13 @@ public class CanoeScript : MonoBehaviour
     private void CheckStarInfo()
     {
         if(PlayerManager.Instance.StarInfo1Unlocked && PlayerManager.Instance.StarInfo2Unlocked &&
-           PlayerManager.Instance.StarInfo3Unlocked && PlayerManager.Instance.StarInfo4Unlocked)
+           PlayerManager.Instance.StarInfo3Unlocked && PlayerManager.Instance.StarInfo4Unlocked &&
+           PlayerManager.Instance.HasBeenToLevel2)
         {
             goLevel3 = true;
         }
         else if (PlayerManager.Instance.StarInfo1Unlocked && PlayerManager.Instance.StarInfo2Unlocked &&
-           PlayerManager.Instance.StarInfo3Unlocked)
+                 PlayerManager.Instance.StarInfo3Unlocked && !PlayerManager.Instance.HasBeenToLevel2)
         {
             goLevel2 = true;
         }
