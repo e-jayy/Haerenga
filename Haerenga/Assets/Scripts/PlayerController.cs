@@ -339,14 +339,21 @@ public class PlayerController : MonoBehaviour
     {
         if (isWallClinging)
         {
-            // Drain stamina
-            wallClingStamina -= Time.deltaTime;
-            
-            // Out of stamina - fall off wall
-            if (wallClingStamina <= 0f)
+            if(!unlockedWallJump)
             {
-                wallClingStamina = 0f;
-                coll.sharedMaterial = normalMaterial;
+                // Drain stamina
+                wallClingStamina -= Time.deltaTime;
+                
+                // Out of stamina - fall off wall
+                if (wallClingStamina <= 0f)
+                {
+                    wallClingStamina = 0f;
+                    coll.sharedMaterial = normalMaterial;
+                }
+            }
+            else if(unlockedWallJump)
+            {
+                coll.sharedMaterial = wallClingMaterial;
             }
         }
         else
@@ -769,7 +776,6 @@ public class PlayerController : MonoBehaviour
         if (PlayerManager.Instance.WallJumpUnlocked)
         {
             unlockedWallJump = true;
-            coll.sharedMaterial = wallClingMaterial;
 
         }
         else if (!PlayerManager.Instance.WallJumpUnlocked)

@@ -236435,7 +236435,7 @@ Transform:
   m_GameObject: {fileID: 1568005030}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 110.3764, y: 38.99907, z: -10}
+  m_LocalPosition: {x: 110.43437, y: 38.99859, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -237431,6 +237431,14 @@ PrefabInstance:
     - target: {fileID: 4404487109501981718, guid: 738cedff811d43143a31a14720afdd00, type: 3}
       propertyPath: grappleEndBoost
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4404487109501981718, guid: 738cedff811d43143a31a14720afdd00, type: 3}
+      propertyPath: groundCheckSize.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4404487109501981718, guid: 738cedff811d43143a31a14720afdd00, type: 3}
+      propertyPath: wallCheckDistance
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6023688845023129983, guid: 738cedff811d43143a31a14720afdd00, type: 3}
       propertyPath: m_Icon

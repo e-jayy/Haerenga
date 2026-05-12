@@ -363,7 +363,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 099b6721e420e1544a746eefcaaf46fb, type: 2}
+  m_Material: {fileID: 6200000, guid: 84087fe57ec7f23499ec2e93e1691b68, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -397,7 +397,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.9, y: 1.1}
+  m_Size: {x: 0.95, y: 1.1}
   m_EdgeRadius: 0
 --- !u!50 &5715429079993743269
 Rigidbody2D:
@@ -453,7 +453,7 @@ MonoBehaviour:
   wallClingStaminaRegenRate: 0.75
   maxWallClingStamina: 1
   wallCheck: {fileID: 800755548540785703}
-  wallCheckDistance: 0.465
+  wallCheckDistance: 0.5
   wallCheckHeight: 0.2
   wallDetachCooldown: 0.12
   OldwallJumpHorizontalForce: 10
