@@ -251,7 +251,7 @@ Transform:
   m_GameObject: {fileID: 6023688845023129983}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.05, z: 0}
+  m_LocalPosition: {x: 0, y: 0.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -387,7 +387,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.1}
+  m_Offset: {x: 0, y: -0.15}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -397,7 +397,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.95, y: 1.2}
+  m_Size: {x: 0.9, y: 1.1}
   m_EdgeRadius: 0
 --- !u!50 &5715429079993743269
 Rigidbody2D:
@@ -453,8 +453,8 @@ MonoBehaviour:
   wallClingStaminaRegenRate: 0.75
   maxWallClingStamina: 1
   wallCheck: {fileID: 800755548540785703}
-  wallCheckDistance: 0.5
-  wallCheckHeight: 1.1
+  wallCheckDistance: 0.465
+  wallCheckHeight: 0.2
   wallDetachCooldown: 0.12
   OldwallJumpHorizontalForce: 10
   OldwallJumpVerticalForce: 7
@@ -463,7 +463,7 @@ MonoBehaviour:
   NewwallJumpVerticalForce: 12
   NewwallJumpInputLock: 0.14
   groundCheck: {fileID: 1350386310103286853}
-  groundCheckSize: {x: 0.7, y: 0.1}
+  groundCheckSize: {x: 0.88, y: 0.11}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64

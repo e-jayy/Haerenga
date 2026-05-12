@@ -235,7 +235,7 @@ public class PlayerController : MonoBehaviour
 
         if (hasBounced)
         {
-            if (isGrounded || isGrappling)
+            if (isGrounded || isGrapplingToTarget)
             {
                 SetBouncePadDurationHorizontal(0f);
                 hasBounced = false;
@@ -351,6 +351,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
+            coll.sharedMaterial = normalMaterial;
             // Regenerate stamina when not wall clinging
             wallClingStamina += wallClingStaminaRegenRate * Time.deltaTime;
             
@@ -361,7 +362,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (wallClingStamina > 0f)
+        if (wallClingStamina > 0f && isWallClinging)
         {
             coll.sharedMaterial = wallClingMaterial;
         }
