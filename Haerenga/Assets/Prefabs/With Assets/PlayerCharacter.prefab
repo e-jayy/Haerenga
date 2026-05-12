@@ -27,7 +27,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 0.19999999}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7511382566953515612}
@@ -76,8 +76,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 2ad815adc14e01748bd6d090249edfb7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -351,6 +351,7 @@ MonoBehaviour:
     m_Bits: 256
   bounceCooldown: 1
   bounceEndBoost: 12
+  hasBounced: 0
   wallJumpInputTimer: 0
   grappleLineSpeed: 30
 --- !u!120 &7994139911982639681
@@ -421,8 +422,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.103773594, g: 0.063486636, b: 0, a: 1}
-      key1: {r: 0.20754719, g: 0.12772135, b: 0, a: 1}
+      key0: {r: 0.12197714, g: 0.16981131, b: 0, a: 1}
+      key1: {r: 0.41960788, g: 0.49803925, b: 0.21960786, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
