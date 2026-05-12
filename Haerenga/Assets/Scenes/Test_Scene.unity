@@ -9410,30 +9410,6 @@ PrefabInstance:
       propertyPath: m_Parameters.widthMultiplier
       value: 0.05
       objectReference: {fileID: 0}
-    - target: {fileID: 7994139911982639681, guid: 738cedff811d43143a31a14720afdd00, type: 3}
-      propertyPath: m_Parameters.colorGradient.key0.b
-      value: 0.42145783
-      objectReference: {fileID: 0}
-    - target: {fileID: 7994139911982639681, guid: 738cedff811d43143a31a14720afdd00, type: 3}
-      propertyPath: m_Parameters.colorGradient.key0.g
-      value: 0.5829058
-      objectReference: {fileID: 0}
-    - target: {fileID: 7994139911982639681, guid: 738cedff811d43143a31a14720afdd00, type: 3}
-      propertyPath: m_Parameters.colorGradient.key0.r
-      value: 0.7264151
-      objectReference: {fileID: 0}
-    - target: {fileID: 7994139911982639681, guid: 738cedff811d43143a31a14720afdd00, type: 3}
-      propertyPath: m_Parameters.colorGradient.key1.b
-      value: 0.42352942
-      objectReference: {fileID: 0}
-    - target: {fileID: 7994139911982639681, guid: 738cedff811d43143a31a14720afdd00, type: 3}
-      propertyPath: m_Parameters.colorGradient.key1.g
-      value: 0.58431375
-      objectReference: {fileID: 0}
-    - target: {fileID: 7994139911982639681, guid: 738cedff811d43143a31a14720afdd00, type: 3}
-      propertyPath: m_Parameters.colorGradient.key1.r
-      value: 0.7294118
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -81,6 +81,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float grappleEndBoost = 8f;
     [SerializeField] private float grappleCooldown = 0.3f;
     [SerializeField] private LineRenderer grappleLineRenderer;
+    [SerializeField] private LineRenderer grappleOutlineRenderer;
     [SerializeField] private Transform hookProjectile;
 
     [Header("Bounce Settings")]
@@ -631,17 +632,20 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator AnimateGrappleLine(Vector2 origin, Vector2 target)
     {
-        if (grappleLineRenderer == null) yield break;
+        if (grappleLineRenderer == null || grappleOutlineRenderer == null)
+            yield break;
 
         grappleLineRenderer.enabled = true;
+        grappleOutlineRenderer.enabled = true;
+
         grappleLineRenderer.positionCount = 2;
+        grappleOutlineRenderer.positionCount = 2;
 
         // Enable and orient the hook projectile
         if (hookProjectile != null)
         {
             hookProjectile.gameObject.SetActive(true);
 
-            // Rotate hook to face the direction it's traveling
             float angle = Mathf.Atan2(rayDirection.y, rayDirection.x) * Mathf.Rad2Deg;
             hookProjectile.rotation = Quaternion.Euler(0f, 0f, angle);
         }
@@ -656,19 +660,26 @@ public class PlayerController : MonoBehaviour
             float t = Mathf.Clamp01(elapsed / duration);
 
             Vector2 currentEnd = Vector2.Lerp(origin, target, t);
+
+            // Main line
             grappleLineRenderer.SetPosition(0, transform.position);
             grappleLineRenderer.SetPosition(1, currentEnd);
 
-            // Hook sits at the tip of the line
+            // Outline line
+            grappleOutlineRenderer.SetPosition(0, transform.position);
+            grappleOutlineRenderer.SetPosition(1, currentEnd);
+
             if (hookProjectile != null)
                 hookProjectile.position = currentEnd;
 
             yield return null;
         }
 
-        // Snap to final position
         grappleLineRenderer.SetPosition(0, transform.position);
         grappleLineRenderer.SetPosition(1, target);
+
+        grappleOutlineRenderer.SetPosition(0, transform.position);
+        grappleOutlineRenderer.SetPosition(1, target);
 
         if (hookProjectile != null)
             hookProjectile.position = target;
@@ -678,6 +689,9 @@ public class PlayerController : MonoBehaviour
     {
         if (grappleLineRenderer != null)
             grappleLineRenderer.enabled = false;
+
+        if (grappleOutlineRenderer != null)
+            grappleOutlineRenderer.enabled = false;
 
         if (hookProjectile != null)
             hookProjectile.gameObject.SetActive(false);
@@ -703,10 +717,13 @@ public class PlayerController : MonoBehaviour
             transform.position = newPos;
             rb.linearVelocity = Vector2.zero;
 
-            if (grappleLineRenderer != null)
+            if (grappleLineRenderer != null && grappleOutlineRenderer != null)
             {
                 grappleLineRenderer.SetPosition(0, transform.position);
                 grappleLineRenderer.SetPosition(1, grappleTargetPos);
+
+                grappleOutlineRenderer.SetPosition(0, transform.position);
+                grappleOutlineRenderer.SetPosition(1, grappleTargetPos);
             }
 
             if (hookProjectile != null)
