@@ -175,6 +175,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4769585001927466237, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769585001927466237, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Position.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435525118101160644, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435525118101160644, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Position.x
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7044082367903878436, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
       propertyPath: m_Name
       value: CrumblingPlatform_Tile (1)
@@ -399,6 +415,22 @@ PrefabInstance:
     - target: {fileID: 3080909546491329344, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
       propertyPath: m_Tiles.Array.data[0].second.m_TileSpriteIndex
       value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769585001927466237, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769585001927466237, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Position.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435525118101160644, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435525118101160644, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Position.x
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7044082367903878436, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
       propertyPath: m_Name
@@ -34253,7 +34285,7 @@ Transform:
   m_GameObject: {fileID: 179570425}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.5, y: 16.5, z: -10}
+  m_LocalPosition: {x: -159.5, y: -32.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -34555,6 +34587,22 @@ PrefabInstance:
     - target: {fileID: 2666283774817562536, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769585001927466237, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769585001927466237, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Position.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435525118101160644, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435525118101160644, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Position.x
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7044082367903878436, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
       propertyPath: m_Name
@@ -34945,6 +34993,22 @@ PrefabInstance:
     - target: {fileID: 2666283774817562536, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769585001927466237, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769585001927466237, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Position.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435525118101160644, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435525118101160644, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Position.x
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7044082367903878436, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
       propertyPath: m_Name
@@ -35464,6 +35528,22 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[1].second.m_TileSpriteIndex
       value: 32
       objectReference: {fileID: 0}
+    - target: {fileID: 4769585001927466237, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769585001927466237, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Position.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435525118101160644, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435525118101160644, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Position.x
+      value: -0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7044082367903878436, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
       propertyPath: m_Name
       value: CrumblingPlatform_Tile (5)
@@ -35755,6 +35835,30 @@ PrefabInstance:
     - target: {fileID: 2666283774817562536, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769585001927466237, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769585001927466237, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Scale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769585001927466237, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Position.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435525118101160644, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435525118101160644, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Scale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435525118101160644, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Position.x
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7044082367903878436, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
       propertyPath: m_Name
@@ -60302,6 +60406,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4769585001927466237, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769585001927466237, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Position.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435525118101160644, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435525118101160644, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Position.x
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7044082367903878436, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
       propertyPath: m_Name
       value: CrumblingPlatform_Tile (3)
@@ -60937,6 +61057,38 @@ PrefabInstance:
     - target: {fileID: 2666283774817562536, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769585001927466237, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769585001927466237, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Scale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769585001927466237, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Position.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769585001927466237, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Position.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435525118101160644, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435525118101160644, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Scale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435525118101160644, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Position.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435525118101160644, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Position.y
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7044082367903878436, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
       propertyPath: m_Name
@@ -83947,6 +84099,30 @@ PrefabInstance:
     - target: {fileID: 2666283774817562536, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769585001927466237, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769585001927466237, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Scale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769585001927466237, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Position.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435525118101160644, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435525118101160644, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Scale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435525118101160644, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Position.x
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7044082367903878436, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
       propertyPath: m_Name
@@ -139459,6 +139635,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4769585001927466237, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769585001927466237, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Position.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435525118101160644, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435525118101160644, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Position.x
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7044082367903878436, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
       propertyPath: m_Name
       value: CrumblingPlatform_Tile
@@ -140473,6 +140665,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4769585001927466237, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769585001927466237, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Position.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435525118101160644, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435525118101160644, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Position.x
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7044082367903878436, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
       propertyPath: m_Name
       value: CrumblingPlatform_Tile (2)
@@ -140581,11 +140789,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7511382566953515612, guid: 738cedff811d43143a31a14720afdd00, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 158.5
+      value: -9.5
       objectReference: {fileID: 0}
     - target: {fileID: 7511382566953515612, guid: 738cedff811d43143a31a14720afdd00, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 45.5
+      value: -3.5
       objectReference: {fileID: 0}
     - target: {fileID: 7511382566953515612, guid: 738cedff811d43143a31a14720afdd00, type: 3}
       propertyPath: m_LocalPosition.z
@@ -247913,6 +248121,22 @@ PrefabInstance:
     - target: {fileID: 2666283774817562536, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769585001927466237, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769585001927466237, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Position.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435525118101160644, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435525118101160644, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
+      propertyPath: ShapeModule.m_Position.x
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7044082367903878436, guid: 2319ff3f680baeb47a637af959b313f3, type: 3}
       propertyPath: m_Name
