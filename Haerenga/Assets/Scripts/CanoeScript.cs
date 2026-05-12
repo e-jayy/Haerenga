@@ -6,6 +6,8 @@ public class CanoeScript : MonoBehaviour
     private bool goLevel2 = false;
     private bool goLevel3 = false;
     public GameObject cantGoPrompt;
+    [SerializeField] private PlayerController _playerController;
+    private bool isPaused;
 
     private void Start()
     {
@@ -13,6 +15,13 @@ public class CanoeScript : MonoBehaviour
         if (canoeCollider == null)
         {
             Debug.LogError("CanoeScript: No Collider2D found on the canoe object.");
+        }
+    }
+    public void Update()
+    {
+        if (cantGoPrompt.activeSelf && InputManager.instance.JumpJustPressed)
+        {
+            CloseCantGoPrompt();
         }
     }
 
@@ -35,16 +44,42 @@ public class CanoeScript : MonoBehaviour
             }
             else
             {
-                cantGoPrompt.SetActive(true);
+                OpenCantGoPrompt();
             }
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OpenCantGoPrompt()
     {
-        if (collision.CompareTag("Player"))
+        cantGoPrompt.SetActive(true);
+        Pause();
+    }
+
+    private void CloseCantGoPrompt()
+    {
+        cantGoPrompt.SetActive(false);
+        Unpause();
+    }
+
+    public void Pause()
+    {
+        isPaused = true;
+        Time.timeScale = 0f;
+
+        if(_playerController != null)
         {
-            cantGoPrompt.SetActive(false);
+        _playerController.enabled = false;    
+        }
+    }
+
+    public void Unpause()
+    {
+        isPaused = false;
+        Time.timeScale = 1f;
+
+        if(_playerController != null)
+        {
+        _playerController.enabled = true;    
         }
     }
 
