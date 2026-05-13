@@ -35,12 +35,12 @@ public class CanoeScript : MonoBehaviour
             if(goLevel3)
             {
                 SceneController.Instance.ResetSpawnData();
-                SceneController.Instance.LoadScene("Level3_Coral");
+                SceneController.Instance.LoadScene("Level_StarNav");
             }
             else if (goLevel2)
             {
                 SceneController.Instance.ResetSpawnData();
-                SceneController.Instance.LoadScene("Level2_Overgrown");
+                SceneController.Instance.LoadScene("Level_StarNav");
             }
             else
             {
