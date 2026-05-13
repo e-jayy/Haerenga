@@ -4300,7 +4300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 60
   villageValue: 0
-  level2Value: 180
+  level2Value: 67
   level3Value: 281
   tolerance: 5.625
   confirmChoiceCanvas: {fileID: 213318672}

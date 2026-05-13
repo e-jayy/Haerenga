@@ -22,7 +22,7 @@ public class Starcompass : MonoBehaviour
 
         float stepRotation = step * (360f / 32f);
 
-        UIElement.rotation = Quaternion.Euler(0f, 0f, stepRotation);
+        UIElement.rotation = Quaternion.Euler(0f, 0f, 180 + stepRotation);
 
         // Set text for current segment
         if (directionText != null && stepTexts.Length > step)

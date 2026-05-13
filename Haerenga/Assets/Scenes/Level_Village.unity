@@ -355,7 +355,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: These group of stars are the figure of the god of harvest. His spear leads
-    us towards Mokupuni ulu nui, a rich island.
+    towards Mokupuni ulu nui, a rich island.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: af4ff3162407dc34d8640f7567162472, type: 2}
   m_sharedMaterial: {fileID: 8529674407824662207, guid: af4ff3162407dc34d8640f7567162472, type: 2}
@@ -916,6 +916,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 520726287}
     m_Modifications:
+    - target: {fileID: 618842506648242176, guid: caff4cff4c667cb46b0dbdbeb0bd7ab3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 721697594719757591, guid: caff4cff4c667cb46b0dbdbeb0bd7ab3, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -942,7 +946,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1168101532914996567, guid: caff4cff4c667cb46b0dbdbeb0bd7ab3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -480
+      value: -451
       objectReference: {fileID: 0}
     - target: {fileID: 1444996883682896256, guid: caff4cff4c667cb46b0dbdbeb0bd7ab3, type: 3}
       propertyPath: m_AnchorMax.y
@@ -968,9 +972,17 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1745445120094822802, guid: caff4cff4c667cb46b0dbdbeb0bd7ab3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1976125678178672125, guid: caff4cff4c667cb46b0dbdbeb0bd7ab3, type: 3}
       propertyPath: m_Name
       value: Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 2331578546331838122, guid: caff4cff4c667cb46b0dbdbeb0bd7ab3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2397126521624782221, guid: caff4cff4c667cb46b0dbdbeb0bd7ab3, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1014,7 +1026,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2669803361652184215, guid: caff4cff4c667cb46b0dbdbeb0bd7ab3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -38
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 2811635209668983073, guid: caff4cff4c667cb46b0dbdbeb0bd7ab3, type: 3}
       propertyPath: m_text
@@ -1047,6 +1059,10 @@ PrefabInstance:
     - target: {fileID: 2848895106183876750, guid: caff4cff4c667cb46b0dbdbeb0bd7ab3, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -136.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 2973957180257005118, guid: caff4cff4c667cb46b0dbdbeb0bd7ab3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3716061344999444189, guid: caff4cff4c667cb46b0dbdbeb0bd7ab3, type: 3}
       propertyPath: m_SizeDelta.x
@@ -141972,7 +141988,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &718245516
 Transform:
   m_ObjectHideFlags: 0
@@ -163502,8 +163518,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: These 'pointer stars' communicate to our people. For each one in the sky,
-    we must turn once, using the kapehu whetu, from Akau to Hikina to reach the island
-    of the deep sea.
+    we must turn once, using the kapehu whetu, from Akau to Komohana to reach the
+    island of the deep sea.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: af4ff3162407dc34d8640f7567162472, type: 2}
   m_sharedMaterial: {fileID: 8529674407824662207, guid: af4ff3162407dc34d8640f7567162472, type: 2}
