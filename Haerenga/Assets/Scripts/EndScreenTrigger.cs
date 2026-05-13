@@ -6,7 +6,6 @@ public class EndScreenTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Time.timeScale = 0f;
             SceneController.Instance.LoadScene("End_Scene");
         }
     }

@@ -1,5 +1,67 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2285499659367921238
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4644481096969058171}
+  m_Layer: 0
+  m_Name: GroundCheck (1)
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4644481096969058171
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2285499659367921238}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.275, y: -0.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7511382566953515612}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2559815969658551599
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4029005936767151743}
+  m_Layer: 0
+  m_Name: GroundCheck (2)
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4029005936767151743
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2559815969658551599}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.275, y: -0.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7511382566953515612}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3281631193920983520
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,6 +356,8 @@ Transform:
   m_Children:
   - {fileID: 6778115963341360404}
   - {fileID: 1350386310103286853}
+  - {fileID: 4644481096969058171}
+  - {fileID: 4029005936767151743}
   - {fileID: 800755548540785703}
   - {fileID: 7655898654384811044}
   m_Father: {fileID: 0}
@@ -397,7 +461,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.95, y: 1.1}
+  m_Size: {x: 0.65, y: 1.1}
   m_EdgeRadius: 0
 --- !u!50 &5715429079993743269
 Rigidbody2D:
@@ -453,8 +517,8 @@ MonoBehaviour:
   wallClingStaminaRegenRate: 0.75
   maxWallClingStamina: 1
   wallCheck: {fileID: 800755548540785703}
-  wallCheckDistance: 0.5
-  wallCheckHeight: 0.2
+  wallCheckDistance: 0.4
+  wallCheckHeight: 0.35
   wallDetachCooldown: 0.12
   OldwallJumpHorizontalForce: 10
   OldwallJumpVerticalForce: 7
@@ -462,8 +526,11 @@ MonoBehaviour:
   NewwallJumpHorizontalForce: 12
   NewwallJumpVerticalForce: 12
   NewwallJumpInputLock: 0.14
-  groundCheck: {fileID: 1350386310103286853}
-  groundCheckSize: {x: 0.88, y: 0.11}
+  groundCheckCenter: {fileID: 1350386310103286853}
+  groundCheckCenterSize: {x: 0.45, y: 0.1}
+  groundCheckLeft: {fileID: 4029005936767151743}
+  groundCheckRight: {fileID: 4644481096969058171}
+  groundCheckSideSize: {x: 0.1, y: 0.1}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -649,7 +716,7 @@ Transform:
   m_GameObject: {fileID: 7543279647039660664}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.65, z: 0}
+  m_LocalPosition: {x: 0, y: -0.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

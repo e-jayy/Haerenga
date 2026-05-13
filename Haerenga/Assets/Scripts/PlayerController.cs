@@ -1,5 +1,6 @@
 using System.Collections;
-using System.Diagnostics.CodeAnalysis;
+//using System.Diagnostics;
+//using System.Diagnostics.CodeAnalysis;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -44,7 +45,7 @@ public class PlayerController : MonoBehaviour
     private float wallJumpVerticalForce;
     private float wallJumpInputLock;
     [SerializeField] private float wallDetachCooldown = 0.12f;
-
+    private bool pressingIntoWall;
     [Header("Wall Jump")]
     [SerializeField] private float OldwallJumpHorizontalForce = 9f;
     [SerializeField] private float OldwallJumpVerticalForce = 7f;
@@ -57,8 +58,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float NewwallJumpInputLock = 0.14f;
 
     [Header("Ground Check")]
-    [SerializeField] private Transform groundCheck;
-    [SerializeField] private Vector2 groundCheckSize = new Vector2(0.5f, 0.1f);
+    [SerializeField] private Transform groundCheckCenter;
+    [SerializeField] private Vector2 groundCheckCenterSize = new Vector2(0.5f, 0.1f);
+    [SerializeField] private Transform groundCheckLeft;
+    [SerializeField] private Transform groundCheckRight;
+    [SerializeField] private Vector2 groundCheckSideSize = new Vector2(0.3f, 0.1f);
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask onewayLayer;
 
@@ -177,6 +181,10 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        Debug.Log("isTouchingWall: " + isTouchingWall);
+        Debug.Log("pressingIntoWall: " + pressingIntoWall);
+        Debug.Log("isWallClinging: " + isWallClinging);
+
         HandleTimers();
 
         GetHorizontalInput();
@@ -320,11 +328,12 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        bool pressingIntoWall =
-            (horizontalInputEffective > 0f && wallDirection == 1) ||
-            (horizontalInputEffective < 0f && wallDirection == -1);
+        pressingIntoWall =
+            (horizontalInputEffective > 0.1f && wallDirection == 1) ||
+            (horizontalInputEffective < -0.1f && wallDirection == -1);
 
-        if (isTouchingWall && !isGrounded && pressingIntoWall)
+        if (isTouchingWall //&& !isGrounded
+        && pressingIntoWall)
         {
             isWallClinging = true;
             facingDirection = -wallDirection;      
@@ -384,7 +393,29 @@ public class PlayerController : MonoBehaviour
     private void CheckGround()
     {
         wasGrounded = isGrounded;
-        isGrounded = Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0f, onewayLayer | groundLayer);
+        
+        // Check center ground point with its own size
+        bool centerGrounded = Physics2D.OverlapBox(groundCheckCenter.position, groundCheckCenterSize, 0f, onewayLayer | groundLayer);
+        
+        // Check side ground points with shared side size
+        bool leftGrounded = false;
+        bool rightGrounded = false;
+        
+        if (groundCheckLeft != null)
+            leftGrounded = Physics2D.OverlapBox(groundCheckLeft.position, groundCheckSideSize, 0f, onewayLayer | groundLayer);
+        
+        if (groundCheckRight != null)
+            rightGrounded = Physics2D.OverlapBox(groundCheckRight.position, groundCheckSideSize, 0f, onewayLayer | groundLayer);
+        
+        // Count how many points are grounded
+        int groundedCount = 0;
+        if (centerGrounded) groundedCount++;
+        if (leftGrounded) groundedCount++;
+        if (rightGrounded) groundedCount++;
+        
+        // Require at least 2 points to be in contact to be considered grounded
+        // This provides more stability on moving platforms
+        isGrounded = groundedCount >= 2;
 
         if (isGrounded || isWallClinging) jumpsRemaining = maxJumps;
 
@@ -840,10 +871,22 @@ public class PlayerController : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        if (groundCheck != null)
+        if (groundCheckCenter != null)
         {
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireCube(groundCheck.position, groundCheckSize);
+            Gizmos.color = Color.green;
+            Gizmos.DrawWireCube(groundCheckCenter.position, groundCheckCenterSize);
+        }
+        
+        if (groundCheckLeft != null)
+        {
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawWireCube(groundCheckLeft.position, groundCheckSideSize);
+        }
+        
+        if (groundCheckRight != null)
+        {
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawWireCube(groundCheckRight.position, groundCheckSideSize);
         }
 
         if (wallCheck != null)
@@ -949,7 +992,7 @@ public class PlayerController : MonoBehaviour
         {
             sr.flipX = true;
         }
-        //animator.SetFloat("Horizontal Speed", Mathf.Abs(InputManager.instance.MoveInput.x));
+        //animator.SetFloat("Horizontal Speed", horizontalInputEffective);
         animator.SetBool("Horizontal Input", InputManager.instance.MoveInput.x != 0);
         animator.SetFloat("Vertical Velocity", rb.linearVelocity.y);
         animator.SetBool("IsGrounded", isGrounded);
