@@ -9,10 +9,12 @@ public class MovingPlatform : MonoBehaviour
     [Header("Settings")]
     public float speed = 1f;
     public float pauseTime = 0f;
+    public float startDelay = 0f;
 
     private float t = 0f;
     private bool goingToB = true;
     private bool isPaused = false;
+    private bool hasStarted = false;
 
     private Vector2 worldA;
     private Vector2 worldB;
@@ -30,7 +32,20 @@ public class MovingPlatform : MonoBehaviour
 
     private void Update()
     {
-        if (isPaused)
+        if (!hasStarted)
+        {
+            if (startDelay > 0f)
+            {
+                startDelay -= Time.deltaTime;
+                return;
+            }
+            else
+            {
+                hasStarted = true;
+            }
+        }
+
+        if (isPaused || !hasStarted)
             return;
 
         t += (goingToB ? 1 : -1) * speed * Time.deltaTime;
