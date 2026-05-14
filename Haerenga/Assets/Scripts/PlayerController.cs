@@ -597,9 +597,16 @@ public class PlayerController : MonoBehaviour
         if (InputManager.instance.HookInput && !isRayActive && !isGrapplingToTarget && canGrapple && unlockedHook)
         {
             float verticalInput = InputManager.instance.MoveInput.y;
-            if (verticalInput > 0.1f) rayDirection = Vector2.up;
-            else if (verticalInput < -0.1f) rayDirection = Vector2.down;
-            else rayDirection = Vector2.right * facingDirection;
+
+            // Only allow upward or horizontal grapples
+            if (verticalInput > 0.1f)
+            {
+                rayDirection = Vector2.up;
+            }
+            else
+            {
+                rayDirection = Vector2.right * facingDirection;
+            }
 
             isRayActive = true;
             isGrappling = true;
