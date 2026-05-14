@@ -602,10 +602,12 @@ public class PlayerController : MonoBehaviour
             if (verticalInput > 0.1f)
             {
                 rayDirection = Vector2.up;
+                animator.SetTrigger("HookUp");
             }
             else
             {
                 rayDirection = Vector2.right * facingDirection;
+                animator.SetTrigger("HookHorizontal");
             }
 
             isRayActive = true;
@@ -749,6 +751,12 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(grappleDelay);
 
         isGrapplingToTarget = true;
+
+        bool pullingUp = Mathf.Abs(rayDirection.y) > 0.5f;
+
+        animator.SetBool("IsPullingUp", pullingUp);
+        animator.SetBool("IsPullingHorizontal", !pullingUp);
+
         grappleStartPos = transform.position;
         grappleTargetPos = targetPos; // Already the exact hit point, no adjustment needed
 
@@ -780,6 +788,8 @@ public class PlayerController : MonoBehaviour
 
         transform.position = grappleTargetPos;
         isGrapplingToTarget = false;
+        animator.SetBool("IsPullingUp", false);
+        animator.SetBool("IsPullingHorizontal", false);
 
         DisableGrappleVisuals();
 
@@ -991,6 +1001,11 @@ public class PlayerController : MonoBehaviour
 
     private void HandleAnimation()
     {
+        if (isGrapplingToTarget)
+        {
+            return;
+        }
+
         if(facingDirection == 1)
         {
             sr.flipX = false;
