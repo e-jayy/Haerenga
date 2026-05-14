@@ -3061,7 +3061,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 9814ac1129cdf98439367a0d2f9d6c39, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3387,7 +3387,7 @@ Transform:
   m_GameObject: {fileID: 1293625099}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.164792, z: -1}
+  m_LocalPosition: {x: 0, y: -4.169212, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4307,6 +4307,7 @@ MonoBehaviour:
   incorrectChoiceCanvas: {fileID: 913163963}
   starUICanvas: {fileID: 1161837970}
   _choiceMenuFirst: {fileID: 1876601553}
+  Menu: {fileID: 1838606007}
   checkUIOn: 0
   incorrectUIOn: 0
 --- !u!1001 &1684819872
@@ -4478,6 +4479,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1838606007 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8971723042230611210, guid: caff4cff4c667cb46b0dbdbeb0bd7ab3, type: 3}
+  m_PrefabInstance: {fileID: 1684819872}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e11534c0e9f77aa42888a2eaa48eb962, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1872268572
 GameObject:
   m_ObjectHideFlags: 0

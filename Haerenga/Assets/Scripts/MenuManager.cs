@@ -28,7 +28,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject _controllerMenuFirst;
     [SerializeField] private GameObject _inventoryMenuFirst;
 
-    private bool isPaused;
+    public bool isPaused;
 
     private void Start()
     {
@@ -71,7 +71,7 @@ public class MenuManager : MonoBehaviour
 
     public void Unpause()
     {
-        isPaused = false;
+        StartCoroutine(UnpauseCoroutine());
         Time.timeScale = 1f;
 
         if(_playerController != null)
@@ -80,6 +80,13 @@ public class MenuManager : MonoBehaviour
         }
 
         CloseAllMenus();
+    }
+
+    private IEnumerator UnpauseCoroutine()
+    {
+        yield return new WaitForSeconds(0.5f); // Wait for one frame to ensure all UI actions are processed
+
+        isPaused = false;
     }
     
     #endregion

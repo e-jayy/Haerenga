@@ -18,6 +18,7 @@ public class StarNavigation : MonoBehaviour
     [SerializeField] private GameObject incorrectChoiceCanvas;
     [SerializeField] private GameObject starUICanvas;
     [SerializeField] private GameObject _choiceMenuFirst;
+    [SerializeField] private MenuManager Menu;
     private float horizontalInput;
     public bool checkUIOn = false;
     public bool incorrectUIOn = false;
@@ -38,7 +39,7 @@ public class StarNavigation : MonoBehaviour
             }
         }
 
-        if(checkUIOn ||incorrectUIOn) return;
+        if(checkUIOn ||incorrectUIOn || Menu.isPaused) return;
         RotateMap();
         ChooseDirection();
     }
