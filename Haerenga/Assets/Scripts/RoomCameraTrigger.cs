@@ -2,6 +2,7 @@ using UnityEngine;
 using Unity.Cinemachine;
 using System.Collections.Generic;
 using System.Collections;
+using System.Diagnostics.CodeAnalysis;
 
 public class RoomCameraTrigger : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class RoomCameraTrigger : MonoBehaviour
     [SerializeField] private float LockRoomDelay = 0.5f;  
     [Header("References")]
     [SerializeField] private GameObject RoomLock;
+    [SerializeField] private GameObject[] objectsToActivate;
     public Transform respawnPoint;
 
     private void Start()
@@ -34,6 +36,14 @@ public class RoomCameraTrigger : MonoBehaviour
             if (respawnPoint != null)
             {
                 SceneController.Instance.SetRespawnPoint(respawnPoint.position);
+            }
+            if(objectsToActivate != null)
+            {
+                foreach (GameObject obj in objectsToActivate)
+                {
+                    if (obj != null)
+                    obj.SetActive(true);
+                }  
             }
 
             if (RoomLock != null)
