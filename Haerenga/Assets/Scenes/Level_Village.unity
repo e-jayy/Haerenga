@@ -133294,6 +133294,7 @@ MonoBehaviour:
   textComponent: {fileID: 2025219137}
   objectsToEnable:
   - {fileID: 935384771}
+  - {fileID: 8399591760115050194}
   lines:
   - Behold! I have fish hook...
   - Or piece of fish hook.
@@ -138848,6 +138849,7 @@ Transform:
   - {fileID: 569008881}
   - {fileID: 1656358796}
   - {fileID: 1948310709}
+  - {fileID: 2860402377676880241}
   - {fileID: 718245516}
   - {fileID: 932444674}
   - {fileID: 1144188620}
@@ -141983,12 +141985,12 @@ GameObject:
   m_Component:
   - component: {fileID: 718245516}
   m_Layer: 0
-  m_Name: Paper and Fishhook Prefabs
+  m_Name: Paper Prefabs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &718245516
 Transform:
   m_ObjectHideFlags: 0
@@ -142003,7 +142005,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1085355085}
-  - {fileID: 2860402377676880241}
   - {fileID: 1547721997}
   - {fileID: 1897226189}
   - {fileID: 666507770}
@@ -169833,7 +169834,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 718245516}
+    m_TransformParent: {fileID: 549527539}
     m_Modifications:
     - target: {fileID: 5357658643755093906, guid: 523452ef28359884f9ecefbc93804eca, type: 3}
       propertyPath: m_LocalPosition.x
@@ -169879,6 +169880,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FishhookFragment
       objectReference: {fileID: 0}
+    - target: {fileID: 6020581877481782363, guid: 523452ef28359884f9ecefbc93804eca, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8029291361824391062, guid: 523452ef28359884f9ecefbc93804eca, type: 3}
       propertyPath: abilityInfoPanel
       value: 
@@ -169892,6 +169897,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523452ef28359884f9ecefbc93804eca, type: 3}
+--- !u!1 &8399591760115050194 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6020581877481782363, guid: 523452ef28359884f9ecefbc93804eca, type: 3}
+  m_PrefabInstance: {fileID: 8399591760115050193}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8763726268737301625
 GameObject:
   m_ObjectHideFlags: 0
