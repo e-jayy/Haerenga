@@ -543,7 +543,7 @@ MonoBehaviour:
   coyoteTime: 0.1
   jumpBufferTime: 0.1
   directionalRayDistance: 5.5
-  directionalRayDuration: 0.4
+  directionalRayDuration: 0.55
   grappleLayer:
     serializedVersion: 2
     m_Bits: 128

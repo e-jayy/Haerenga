@@ -87,6 +87,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private LineRenderer grappleLineRenderer;
     [SerializeField] private LineRenderer grappleOutlineRenderer;
     [SerializeField] private Transform hookProjectile;
+    private bool isPlayingHookAnimation;
 
     [Header("Bounce Settings")]
     [SerializeField] private LayerMask bounceLayer;
@@ -611,6 +612,7 @@ public class PlayerController : MonoBehaviour
             }
 
             isRayActive = true;
+            isPlayingHookAnimation = true;
             isGrappling = true;
             rayTimer = directionalRayDuration;
             rb.linearVelocity = Vector2.zero;
@@ -618,7 +620,8 @@ public class PlayerController : MonoBehaviour
             canGrapple = false;
             grappleCooldownTimer = grappleCooldown;
 
-            ShootDirectionalRay();
+            // Delay the hook shot to let animation play
+            StartCoroutine(DelayedHookShot());
         }
 
         if (isRayActive)
@@ -631,6 +634,11 @@ public class PlayerController : MonoBehaviour
                 directionalRayHit = default;
                 isGrappling = false;
 
+                isPlayingHookAnimation = false;
+
+                animator.SetBool("IsPullingUp", false);
+                animator.SetBool("IsPullingHorizontal", false);
+
                 DisableGrappleVisuals();
             }
         }
@@ -641,6 +649,12 @@ public class PlayerController : MonoBehaviour
             if (grappleCooldownTimer <= 0f)
                 canGrapple = true;
         }
+    }
+
+    private IEnumerator DelayedHookShot()
+    {
+        yield return new WaitForSeconds(0.25f); // 0:15 = 0.25 seconds
+        ShootDirectionalRay();
     }
 
     public RaycastHit2D ShootDirectionalRay()
@@ -750,6 +764,7 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(grappleDelay);
 
+        isPlayingHookAnimation = false;
         isGrapplingToTarget = true;
 
         bool pullingUp = Mathf.Abs(rayDirection.y) > 0.5f;
@@ -792,6 +807,7 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("IsPullingHorizontal", false);
 
         DisableGrappleVisuals();
+        isPlayingHookAnimation = false;
 
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, grappleEndBoost);
         jumpsRemaining = maxJumps;
@@ -1001,11 +1017,6 @@ public class PlayerController : MonoBehaviour
 
     private void HandleAnimation()
     {
-        if (isGrapplingToTarget)
-        {
-            return;
-        }
-
         if(facingDirection == 1)
         {
             sr.flipX = false;
@@ -1014,10 +1025,16 @@ public class PlayerController : MonoBehaviour
         {
             sr.flipX = true;
         }
-        //animator.SetFloat("Horizontal Speed", horizontalInputEffective);
-        animator.SetBool("Horizontal Input", InputManager.instance.MoveInput.x != 0);
+
+        // Always update these
         animator.SetFloat("Vertical Velocity", rb.linearVelocity.y);
-        animator.SetBool("IsGrounded", isGrounded);
+        animator.SetBool("IsGrounded", isGrounded && !isPlayingHookAnimation && !isGrapplingToTarget);
         animator.SetBool("IsWallClinging", isWallClinging);
+
+        // Prevent walk/idle overriding hook animations
+        if (!isPlayingHookAnimation && !isGrapplingToTarget)
+        {
+            animator.SetBool("Horizontal Input", InputManager.instance.MoveInput.x != 0);
+        }
     }
 }
