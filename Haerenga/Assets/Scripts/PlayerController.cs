@@ -665,7 +665,7 @@ public class PlayerController : MonoBehaviour
         RaycastHit2D groundHit = Physics2D.Raycast(origin, rayDirection, directionalRayDistance, groundLayer);
 
         bool groundIsBlocking = groundHit.collider != null &&
-                                (grappleHit.collider == null || groundHit.distance < grappleHit.distance);
+        (grappleHit.collider == null || groundHit.distance < grappleHit.distance);
 
         // Determine the end point of the line
         Vector2 lineEnd;
