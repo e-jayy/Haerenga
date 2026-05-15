@@ -182,9 +182,9 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log("isTouchingWall: " + isTouchingWall);
-        Debug.Log("pressingIntoWall: " + pressingIntoWall);
-        Debug.Log("isWallClinging: " + isWallClinging);
+        // Debug.Log("isTouchingWall: " + isTouchingWall);
+        // Debug.Log("pressingIntoWall: " + pressingIntoWall);
+        // Debug.Log("isWallClinging: " + isWallClinging);
 
         HandleTimers();
 
@@ -1025,6 +1025,11 @@ public class PlayerController : MonoBehaviour
         {
             sr.flipX = true;
         }
+        // if (wallJumpInputTimer > 0f)
+        // {
+        //     StartCoroutine(WaitWallJumpInputLock());
+        //     return;
+        // }
 
         // Always update these
         animator.SetFloat("Vertical Velocity", rb.linearVelocity.y);
