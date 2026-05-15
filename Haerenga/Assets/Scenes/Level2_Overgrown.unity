@@ -63825,7 +63825,8 @@ MonoBehaviour:
   inactivePriority: 10
   LockRoomDelay: 0.5
   RoomLock: {fileID: 1647344637}
-  objectsToActivate: []
+  objectsToActivate:
+  - {fileID: 1110212332}
   respawnPoint: {fileID: 1814419523}
 --- !u!61 &714598211
 BoxCollider2D:
@@ -105788,7 +105789,8 @@ MonoBehaviour:
   inactivePriority: 10
   LockRoomDelay: 0.5
   RoomLock: {fileID: 583413985}
-  objectsToActivate: []
+  objectsToActivate:
+  - {fileID: 1257369330}
   respawnPoint: {fileID: 1900022442}
 --- !u!61 &987946912
 BoxCollider2D:
@@ -106861,6 +106863,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MovingPlatform_Tile
       objectReference: {fileID: 0}
+    - target: {fileID: 3439651877845279008, guid: 8ca2dbef7055107408f03bd754ed8e78, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3831672034834348232, guid: 8ca2dbef7055107408f03bd754ed8e78, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4
@@ -107093,6 +107099,11 @@ PrefabInstance:
       addedObject: {fileID: 1067023572}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ca2dbef7055107408f03bd754ed8e78, type: 3}
+--- !u!1 &1110212332 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3439651877845279008, guid: 8ca2dbef7055107408f03bd754ed8e78, type: 3}
+  m_PrefabInstance: {fileID: 1110212331}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1115778705
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -108905,6 +108916,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MovingPlatform_Tile (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3439651877845279008, guid: 8ca2dbef7055107408f03bd754ed8e78, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3831672034834348232, guid: 8ca2dbef7055107408f03bd754ed8e78, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3
@@ -109143,6 +109158,11 @@ PrefabInstance:
 --- !u!4 &1257369329 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6524286783980178810, guid: 8ca2dbef7055107408f03bd754ed8e78, type: 3}
+  m_PrefabInstance: {fileID: 1257369328}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1257369330 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3439651877845279008, guid: 8ca2dbef7055107408f03bd754ed8e78, type: 3}
   m_PrefabInstance: {fileID: 1257369328}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1284454025
@@ -151199,7 +151219,7 @@ Transform:
   m_GameObject: {fileID: 1568005030}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 0, z: -24.40312}
+  m_LocalPosition: {x: 25.5, y: 8, z: -24.40312}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -285603,7 +285623,8 @@ MonoBehaviour:
   inactivePriority: 10
   LockRoomDelay: 0.5
   RoomLock: {fileID: 1144834296}
-  objectsToActivate: []
+  objectsToActivate:
+  - {fileID: 6108280243685561188}
   respawnPoint: {fileID: 494124872}
 --- !u!61 &2120860224
 BoxCollider2D:
@@ -286134,6 +286155,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MovingPlatform_Tile
       objectReference: {fileID: 0}
+    - target: {fileID: 3439651877845279008, guid: 8ca2dbef7055107408f03bd754ed8e78, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3831672034834348232, guid: 8ca2dbef7055107408f03bd754ed8e78, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4
@@ -286373,6 +286398,11 @@ PrefabInstance:
       addedObject: {fileID: 218665074}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ca2dbef7055107408f03bd754ed8e78, type: 3}
+--- !u!1 &6108280243685561188 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3439651877845279008, guid: 8ca2dbef7055107408f03bd754ed8e78, type: 3}
+  m_PrefabInstance: {fileID: 6108280243685561187}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
