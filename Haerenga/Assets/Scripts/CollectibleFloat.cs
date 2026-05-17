@@ -18,11 +18,9 @@ public class CollectibleFloat : MonoBehaviour
 
     void Update()
     {
-        // Float up and down using a sine wave
         float newY = startPosition.y + Mathf.Sin(Time.time * floatSpeed) * floatHeight;
         transform.position = new Vector3(transform.position.x, newY, transform.position.z);
 
-        // Spin around Y axis to simulate 3D spin on a 2D sprite
         transform.Rotate(0f, spinSpeed * Time.deltaTime, 0f);
     }
 }
