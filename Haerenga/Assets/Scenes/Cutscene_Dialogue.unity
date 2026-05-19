@@ -5954,7 +5954,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.5882353}
+  m_Color: {r: 0.33333334, g: 0.33333334, b: 0.33333334, a: 0.39215687}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9108,7 +9108,7 @@ MonoBehaviour:
   - {fileID: 833370631}
   - {fileID: 483577632}
   objectsToDeactivate:
-  - {fileID: 1674227594}
+  - {fileID: 1535587397}
 --- !u!1 &1865497905
 GameObject:
   m_ObjectHideFlags: 0
