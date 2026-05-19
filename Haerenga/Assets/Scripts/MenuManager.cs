@@ -32,6 +32,7 @@ public class MenuManager : MonoBehaviour
 
     private void Start()
     {
+        Cursor.visible = false;
         _mainMenuCanvasGO.SetActive(false);
         _settingsMenuCanvasGO.SetActive(false);
         _keyboardMenuCanvasGO.SetActive(false);
@@ -59,6 +60,7 @@ public class MenuManager : MonoBehaviour
     public void Pause()
     {
         isPaused = true;
+        Cursor.visible = true;
         Time.timeScale = 0f;
 
         if(_playerController != null)
@@ -87,6 +89,7 @@ public class MenuManager : MonoBehaviour
         yield return new WaitForSeconds(0.5f); // Wait for one frame to ensure all UI actions are processed
 
         isPaused = false;
+        Cursor.visible = false;
     }
     
     #endregion

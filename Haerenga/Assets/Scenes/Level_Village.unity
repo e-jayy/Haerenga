@@ -135824,7 +135824,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6
+  orthographic size: 3
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -135849,7 +135849,7 @@ Transform:
   m_GameObject: {fileID: 386700495}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -47.335125, y: -11.414565, z: -10}
+  m_LocalPosition: {x: -52.7, y: -14.33, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -149583,6 +149583,7 @@ MonoBehaviour:
   - {fileID: 718245515}
   _objectsToDeactivate:
   - {fileID: 2071059547}
+  - {fileID: 1706888988}
   transitionAnim: {fileID: 1774237109}
 --- !u!1 &1316019006
 GameObject:

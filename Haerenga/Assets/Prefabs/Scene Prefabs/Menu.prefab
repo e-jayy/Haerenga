@@ -1124,7 +1124,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: A mental compass of the night sky that divides the it into thirty two 'houses',
+  m_text: A mental compass of the night sky that divides  it into thirty two 'houses',
     some with distinct names
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: af4ff3162407dc34d8640f7567162472, type: 2}
