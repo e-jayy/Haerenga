@@ -25,15 +25,12 @@ public class CanoeRowAnimation : MonoBehaviour
 
     void Update()
     {
-        // Vertical bobbing
         float bobOffset = Mathf.Sin(Time.time * bobSpeed) * bobHeight;
         
-        // Forward/backward rowing motion
         float rowOffset = Mathf.Sin(Time.time * rowSpeed) * rowDistance;
         
         transform.position = startPosition + new Vector3(rowOffset, bobOffset, 0f);
 
-        // Gentle rocking/tilting
         float tilt = Mathf.Sin(Time.time * tiltSpeed) * tiltAngle;
         transform.rotation = startRotation * Quaternion.Euler(0f, 0f, tilt);
     }
