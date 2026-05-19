@@ -475,6 +475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 281676786639fbe4cb08153b560f95a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _endMenuFirst: {fileID: 165295474}
 --- !u!1 &339661293
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,6 +584,11 @@ MonoBehaviour:
   wallJumpUnlocked: 0
   doubleJumpUnlocked: 0
   hookUnlocked: 0
+  starInfo1Unlocked: 0
+  starInfo2Unlocked: 0
+  starInfo3Unlocked: 0
+  starInfo4Unlocked: 0
+  hasBeenToLevel2: 0
 --- !u!4 &681672728
 Transform:
   m_ObjectHideFlags: 0
