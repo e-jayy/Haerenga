@@ -369,7 +369,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7219457978226535393
 RectTransform:
   m_ObjectHideFlags: 0
@@ -497,7 +497,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The number of these 'pointer stars' tell us how many houses towards Hikina
+  m_text: The number of these 'pointer stars' tell us how many houses towards Komohana
     from Akau to sail to, to reach the deep sea island. They are often spotted near
     Hema.
   m_isRightToLeft: 0
@@ -1426,7 +1426,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8955048579193214416
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1906,6 +1906,7 @@ MonoBehaviour:
   _keyboardMenuFirst: {fileID: 2845564562208046143}
   _controllerMenuFirst: {fileID: 8884762800609200089}
   _inventoryMenuFirst: {fileID: 2434216909969490402}
+  isPaused: 0
 --- !u!1 &2205895618416164626
 GameObject:
   m_ObjectHideFlags: 0
@@ -2139,7 +2140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3332323088222488772
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3139,7 +3140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2881542983557000174
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4023,7 +4024,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &9098748372488775941
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6228,7 +6229,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 261, y: -34}
+  m_AnchoredPosition: {x: 338, y: -33}
   m_SizeDelta: {x: 395, y: 289.1}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &6305808335073163416
@@ -10514,7 +10515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4173247605819664177, guid: f25dcd618d3acd64795bf8bb32edb6c9, type: 3}
       propertyPath: m_text
-      value: R2
+      value: RT
       objectReference: {fileID: 0}
     - target: {fileID: 4173247605819664177, guid: f25dcd618d3acd64795bf8bb32edb6c9, type: 3}
       propertyPath: m_fontSize
@@ -11386,7 +11387,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4173247605819664177, guid: f25dcd618d3acd64795bf8bb32edb6c9, type: 3}
       propertyPath: m_text
-      value: Touchpad Press
+      value: touchpadButton
       objectReference: {fileID: 0}
     - target: {fileID: 4173247605819664177, guid: f25dcd618d3acd64795bf8bb32edb6c9, type: 3}
       propertyPath: m_fontColor32.rgba
@@ -11568,7 +11569,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4173247605819664177, guid: f25dcd618d3acd64795bf8bb32edb6c9, type: 3}
       propertyPath: m_text
-      value: L2
+      value: LT
       objectReference: {fileID: 0}
     - target: {fileID: 4173247605819664177, guid: f25dcd618d3acd64795bf8bb32edb6c9, type: 3}
       propertyPath: m_fontSize

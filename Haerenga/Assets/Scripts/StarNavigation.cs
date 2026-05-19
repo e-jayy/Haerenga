@@ -89,7 +89,7 @@ public void ConfirmDirection()
     float level2AngleDiff = Mathf.DeltaAngle(currentZ, level2Value);
     if (Mathf.Abs(level2AngleDiff) <= tolerance &&
     PlayerManager.Instance.StarInfo1Unlocked && PlayerManager.Instance.StarInfo2Unlocked
-    && PlayerManager.Instance.StarInfo3Unlocked) 
+    && PlayerManager.Instance.StarInfo3Unlocked && !PlayerManager.Instance.StarInfo4Unlocked) 
     {
         Debug.Log("Sailing to level 2!");
         SailToLevel2();
