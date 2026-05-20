@@ -1,6 +1,5 @@
 # HAERENGA
-This repository is for a Haerenga, A final major project game made by [Paula Vales](https://paulavinx.wixsite.com/artbypaula) and [E-Jay Tripoli](https://ejaydev.framer.website/)
-Visit us at [haerenga.site](https://haerenga.site/)
+This repository is for a Haerenga, A final major project game made by [Paula Vales](https://paulavinx.wixsite.com/artbypaula) and [E-Jay Tripoli](https://ejaydev.framer.website/). Visit us at [haerenga.site](https://haerenga.site/)
 
 ## How to use
 ### Dependancies
