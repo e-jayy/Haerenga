@@ -1,5 +1,6 @@
 # HAERENGA
 This repository is for a Haerenga, A final major project game made by [Paula Vales](https://paulavinx.wixsite.com/artbypaula) and [E-Jay Tripoli](https://ejaydev.framer.website/)
+Visit us at [haerenga.site](https://haerenga.site/)
 
 ## How to use
 ### Dependancies
@@ -14,4 +15,4 @@ This repository is for a Haerenga, A final major project game made by [Paula Val
 The game can be installed [here](https://e-jayy.itch.io/haerenga)
 
 ### Executing the program
-Once at the itch page, download and extract the zipe file. Open the folder and run the 'Haerenga' executable
+Once at the itch page, download and extract the zip file. Open the extracted folder and run the 'Haerenga' executable.
