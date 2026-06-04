@@ -11,12 +11,20 @@ public class ComicPanel : MonoBehaviour
     [SerializeField] private GameObject[] objectsToActivate;
     [SerializeField] private GameObject[] objectsToDeactivate;
 
+    
+    [Header("Audio")]
+    [SerializeField] private AudioClip panelAudio;
+    [SerializeField] [Range(0f, 1f)] private float audioVolume = 1f;
+    public AudioSource audioSource;
+
     private Image panelImage;
-    private bool isRevealed = false;
+    [SerializeField] private bool isRevealed = false;
 
     void Start()
     {
         panelImage = GetComponent<Image>();
+        
+        audioSource = GetComponent<AudioSource>();
         
         if (panelImage != null)
         {
@@ -40,6 +48,12 @@ public class ComicPanel : MonoBehaviour
 
     private IEnumerator FadeIn()
     {
+        if (panelAudio != null && audioSource != null)
+        {
+            audioSource.volume = audioVolume;
+            audioSource.PlayOneShot(panelAudio);
+        }
+
         float elapsed = 0f;
 
         while (elapsed < fadeInDuration)
