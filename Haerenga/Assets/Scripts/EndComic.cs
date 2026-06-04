@@ -23,6 +23,7 @@ public class EndComic : MonoBehaviour
         DeactivateObjects();
         NPCHouse.SetActive(true);
         yield return new WaitForSeconds(0.55f);
+        
         dialogueCanvasGO.SetActive(true);
     }
 
