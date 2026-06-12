@@ -451,7 +451,7 @@ public class PlayerController : MonoBehaviour
 
     private void HandleJump()
     {
-        if (InputManager.instance.JumpJustPressed && wallJumpBufferCounter > 0f)
+        if (!isGrounded && InputManager.instance.JumpJustPressed && wallJumpBufferCounter > 0f && !isRayActive && !isGrapplingToTarget)
         {
             rb.linearVelocity = new Vector2(-storedWallDirection * wallJumpHorizontalForce, wallJumpVerticalForce);
             
