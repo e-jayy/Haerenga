@@ -50,12 +50,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float OldwallJumpHorizontalForce = 9f;
     [SerializeField] private float OldwallJumpVerticalForce = 7f;
     [SerializeField] private float OldwallJumpInputLock = 0.35f;
+    [SerializeField] private float wallJumpBufferTime = 0.2f; // Buffer time after leaving wall
+    private float wallJumpBufferCounter;
 
     [Header("Wall Jump Ability Upgrade")]
     
     [SerializeField] private float NewwallJumpHorizontalForce = 9f;
     [SerializeField] private float NewwallJumpVerticalForce = 9f;
     [SerializeField] private float NewwallJumpInputLock = 0.14f;
+    private int storedWallDirection = 0;
 
     [Header("Ground Check")]
     [SerializeField] private Transform groundCheckCenter;
@@ -239,6 +242,11 @@ public class PlayerController : MonoBehaviour
         if (jumpBufferCounter >= 0f) jumpBufferCounter -= Time.deltaTime;
         if (!canDash) dashCooldownTimer -= Time.deltaTime;
 
+        if (isWallClinging || isTouchingWall) 
+            wallJumpBufferCounter = wallJumpBufferTime;
+        else 
+            wallJumpBufferCounter -= Time.deltaTime;
+
         if (justWallJumped && wallJumpInputTimer <= 0f)
             justWallJumped = false;
 
@@ -333,10 +341,10 @@ public class PlayerController : MonoBehaviour
             (horizontalInputEffective > 0.1f && wallDirection == 1) ||
             (horizontalInputEffective < -0.1f && wallDirection == -1);
 
-        if (isTouchingWall //&& !isGrounded
-        && pressingIntoWall)
+        if (isTouchingWall && pressingIntoWall)
         {
             isWallClinging = true;
+            storedWallDirection = wallDirection; // Store the direction while clinging
             facingDirection = -wallDirection;      
         }
         else
@@ -443,14 +451,15 @@ public class PlayerController : MonoBehaviour
 
     private void HandleJump()
     {
-        if (InputManager.instance.JumpJustPressed && isWallClinging)
+        if (InputManager.instance.JumpJustPressed && wallJumpBufferCounter > 0f)
         {
-            rb.linearVelocity = new Vector2(-wallDirection * wallJumpHorizontalForce, wallJumpVerticalForce);
+            rb.linearVelocity = new Vector2(-storedWallDirection * wallJumpHorizontalForce, wallJumpVerticalForce);
 
             justWallJumped = true;
             wallJumpInputTimer = wallJumpInputLock;
             wallCooldownTimer = wallDetachCooldown;
             isWallClinging = false;
+            wallJumpBufferCounter = 0f;
             return;
         }
 

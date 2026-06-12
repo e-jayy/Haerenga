@@ -523,6 +523,7 @@ MonoBehaviour:
   OldwallJumpHorizontalForce: 10
   OldwallJumpVerticalForce: 7
   OldwallJumpInputLock: 0.28
+  wallJumpBufferTime: 0.1
   NewwallJumpHorizontalForce: 12
   NewwallJumpVerticalForce: 12
   NewwallJumpInputLock: 0.14
