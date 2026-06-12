@@ -265,7 +265,7 @@ public class PlayerController : MonoBehaviour
     {
         horizontalInput = InputManager.instance.MoveInput.x;
 
-        if (!isRayActive)
+        if (!isRayActive && wallJumpInputTimer <= 0f)
         {
             if (horizontalInput > 0.1f) facingDirection = 1;
             else if (horizontalInput < -0.1f) facingDirection = -1;
@@ -454,7 +454,8 @@ public class PlayerController : MonoBehaviour
         if (InputManager.instance.JumpJustPressed && wallJumpBufferCounter > 0f)
         {
             rb.linearVelocity = new Vector2(-storedWallDirection * wallJumpHorizontalForce, wallJumpVerticalForce);
-
+            
+            facingDirection = -storedWallDirection;
             justWallJumped = true;
             wallJumpInputTimer = wallJumpInputLock;
             wallCooldownTimer = wallDetachCooldown;
