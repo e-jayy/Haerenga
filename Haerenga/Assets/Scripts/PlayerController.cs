@@ -5,7 +5,13 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    
+    [Header("Audio Clips")]
+    [SerializeField] private AudioClip[] footstepAudios;
+    [SerializeField] private AudioClip[] jumpAudios;
+    [SerializeField] private AudioClip[] landAudios;
+    [SerializeField] private AudioClip[] grappleThrowAudios;
+    private AudioSource audioSource;
+
     [Header("Unlocked Abilities")]
     //Add these values into a player manager singleton later
     [SerializeField] private bool unlockedDash;
@@ -166,6 +172,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
         coll = GetComponent<Collider2D>();
         rb = GetComponent<Rigidbody2D>();
         originalGravityScale = rb.gravityScale;
@@ -351,6 +358,11 @@ public class PlayerController : MonoBehaviour
         {
             isWallClinging = false;
         }
+
+        if (isWallClinging && !wasWallClinging)
+        {
+            PlayRandomLandAudio();
+        }
     }
 
     private void HandleWallClingStamina()
@@ -454,6 +466,7 @@ public class PlayerController : MonoBehaviour
         if (!isGrounded && InputManager.instance.JumpJustPressed && wallJumpBufferCounter > 0f && !isRayActive && !isGrapplingToTarget)
         {
             rb.linearVelocity = new Vector2(-storedWallDirection * wallJumpHorizontalForce, wallJumpVerticalForce);
+            PlayRandomJumpAudio();
             
             facingDirection = -storedWallDirection;
             justWallJumped = true;
@@ -469,14 +482,21 @@ public class PlayerController : MonoBehaviour
             if (coyoteTimeCounter > 0f && jumpsRemaining > 0)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+                PlayRandomJumpAudio();
                 jumpsRemaining--;
                 coyoteTimeCounter = 0f;
             }
             else if (unlockedDoubleJump && jumpsRemaining > 0 && !isGrounded)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+                PlayRandomJumpAudio();
                 jumpsRemaining--;
             }
+        }
+
+        if (isGrounded && !wasGrounded)
+        {
+            PlayRandomLandAudio();
         }
 
         if (InputManager.instance.JumpReleased && rb.linearVelocity.y > 0f)
@@ -1052,4 +1072,36 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("Horizontal Input", InputManager.instance.MoveInput.x != 0);
         }
     }
+
+    #region Audio Methods
+    public void PlayRandomFootstepAudio()
+    {
+        PlayRandomAudio(footstepAudios);
+    }
+
+    public void PlayRandomJumpAudio()
+    {
+        PlayRandomAudio(jumpAudios);
+    }
+
+    public void PlayRandomLandAudio()
+    {
+        PlayRandomAudio(landAudios);
+    }
+
+    public void PlayRandomGrappleThrowAudio()
+    {
+        PlayRandomAudio(grappleThrowAudios);
+    }
+
+    private void PlayRandomAudio(AudioClip[] audioClips)
+    {
+        if (audioClips == null || audioClips.Length == 0) return;
+        
+        int randomIndex = Random.Range(0, audioClips.Length);
+        audioSource.pitch = Random.Range(0.85f, 1.1f);
+        audioSource.PlayOneShot(audioClips[randomIndex]);
+    }
+
+    #endregion
 }
