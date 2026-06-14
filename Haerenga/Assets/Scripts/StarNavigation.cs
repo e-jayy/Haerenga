@@ -4,6 +4,12 @@ using System.Collections;
 
 public class StarNavigation : MonoBehaviour
 {
+    [Header("Show Constellation")]
+    [SerializeField] private GameObject Constellation;
+    [SerializeField] private float fadeInDuration = 60f;
+    [SerializeField] private float fadeTargetAlpha = 90f/255f;
+    [SerializeField] private SpriteRenderer constellationSpriteRenderer;
+
     [Header("Rotation")]
     [SerializeField] private float rotationSpeed = 180f; // degrees per second
 
@@ -12,6 +18,7 @@ public class StarNavigation : MonoBehaviour
     [SerializeField] [Range(0, 360)] private int level2Value;
     [SerializeField] [Range(0, 360)] private int level3Value; // 0–360 target value
     [SerializeField] private float tolerance = 3f;
+    private bool hasFailedToSail = false;
     [Space(20)]
     
     [SerializeField] private GameObject confirmChoiceCanvas;
@@ -32,6 +39,10 @@ public class StarNavigation : MonoBehaviour
 
     private void Update()
     {
+        if(hasFailedToSail)
+        {
+            ShowConstellation();
+        }
         if (incorrectUIOn)
         {
             if (InputManager.instance.JumpJustPressed)
@@ -136,6 +147,7 @@ public class StarNavigation : MonoBehaviour
         transitionAnim.SetTrigger("End");
         yield return new WaitForSeconds(0.55f);
         transitionAnim.SetTrigger("Start");
+        hasFailedToSail = true;
         DisableChoiceUI();
         OpenIncorrectChoiceUI();
     }
@@ -205,5 +217,34 @@ public class StarNavigation : MonoBehaviour
     {
         float z = transform.eulerAngles.z;
         return (z + 360f) % 360f;
+    }
+    public void ShowConstellation()
+    {
+        Constellation.SetActive(true);
+        StartCoroutine(FadeObject(Constellation, 0f, fadeTargetAlpha, fadeInDuration));
+    }
+
+    private IEnumerator FadeObject(GameObject obj, float startAlpha, float endAlpha, float duration)
+    {
+        float elapsed = 0f;
+        
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            float newAlpha = Mathf.Lerp(startAlpha, endAlpha, elapsed / duration);
+            SetAlpha(obj, newAlpha);
+            yield return null;
+        }
+        
+        SetAlpha(obj, endAlpha);
+    }
+    private void SetAlpha(GameObject obj, float alpha)
+    {
+        if (constellationSpriteRenderer != null)
+        {
+            Color color = constellationSpriteRenderer.color;
+            color.a = alpha;
+            constellationSpriteRenderer.color = color;
+        }
     }
 }
