@@ -1,0 +1,2379 @@
+fileFormatVersion: 2
+guid: 5358228f648cf7d46b6cbf1585f204d6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8007215544206985053
+    second: haerenga_0
+  - first:
+      213: -949198455372785707
+    second: haerenga_1
+  - first:
+      213: -2683685207518849204
+    second: haerenga_2
+  - first:
+      213: -6979650404980809803
+    second: haerenga_3
+  - first:
+      213: 5359900837276404008
+    second: haerenga_4
+  - first:
+      213: 1893448670945915360
+    second: haerenga_5
+  - first:
+      213: 488237195241472662
+    second: haerenga_6
+  - first:
+      213: 4015243407089239661
+    second: haerenga_7
+  - first:
+      213: 4086004639801748216
+    second: haerenga_8
+  - first:
+      213: -2261566351218918274
+    second: haerenga_9
+  - first:
+      213: 7233462813538344224
+    second: haerenga_10
+  - first:
+      213: -6964433810768338037
+    second: haerenga_11
+  - first:
+      213: -1185855259055933615
+    second: haerenga_12
+  - first:
+      213: -6839014481371148118
+    second: haerenga_13
+  - first:
+      213: -4891232952840646791
+    second: haerenga_14
+  - first:
+      213: 2700462968260609075
+    second: haerenga_15
+  - first:
+      213: 1860503031612123876
+    second: haerenga_16
+  - first:
+      213: 7968202155975611366
+    second: haerenga_17
+  - first:
+      213: 596912009385107186
+    second: haerenga_18
+  - first:
+      213: 2764797546682206049
+    second: haerenga_19
+  - first:
+      213: -5258442963980685604
+    second: haerenga_20
+  - first:
+      213: 5355841845324316291
+    second: haerenga_21
+  - first:
+      213: 4300464553454926181
+    second: haerenga_22
+  - first:
+      213: -223098003980306825
+    second: haerenga_23
+  - first:
+      213: -615284756641928609
+    second: haerenga_24
+  - first:
+      213: 7169125245517413603
+    second: haerenga_25
+  - first:
+      213: 3394799209385238464
+    second: haerenga_26
+  - first:
+      213: -5705425814799044146
+    second: haerenga_27
+  - first:
+      213: 1799629498827633478
+    second: haerenga_28
+  - first:
+      213: -2019477134995012731
+    second: haerenga_29
+  - first:
+      213: -1759470722821671117
+    second: haerenga_30
+  - first:
+      213: 3105078861972843310
+    second: haerenga_31
+  - first:
+      213: -7405905232320962990
+    second: haerenga_32
+  - first:
+      213: 3630520165810544785
+    second: haerenga_33
+  - first:
+      213: -6545869251980361446
+    second: haerenga_34
+  - first:
+      213: -8083088172883299913
+    second: haerenga_35
+  - first:
+      213: -6835308163269032174
+    second: haerenga_36
+  - first:
+      213: 5697408051961327201
+    second: haerenga_37
+  - first:
+      213: 3998685350706607596
+    second: haerenga_38
+  - first:
+      213: -3148910868026701883
+    second: haerenga_39
+  - first:
+      213: -2013263627349273970
+    second: haerenga_40
+  - first:
+      213: -1889034974012542421
+    second: haerenga_41
+  - first:
+      213: -2410242538159052883
+    second: haerenga_42
+  - first:
+      213: -7431905458179712472
+    second: haerenga_43
+  - first:
+      213: -1624430258425722135
+    second: haerenga_44
+  - first:
+      213: 7275782256527769886
+    second: haerenga_45
+  - first:
+      213: -9220928453769368440
+    second: haerenga_46
+  - first:
+      213: 4461324586227572842
+    second: haerenga_47
+  - first:
+      213: -6673768355290353783
+    second: haerenga_48
+  - first:
+      213: 1557354797176832631
+    second: haerenga_49
+  - first:
+      213: 8498194080358785191
+    second: haerenga_50
+  - first:
+      213: -324466325692372047
+    second: haerenga_51
+  - first:
+      213: -3683844696397921074
+    second: haerenga_52
+  - first:
+      213: -6254026799915625557
+    second: haerenga_53
+  - first:
+      213: -3992976349256430039
+    second: haerenga_54
+  - first:
+      213: -2438652972200724769
+    second: haerenga_55
+  - first:
+      213: 1370960008132285325
+    second: haerenga_56
+  - first:
+      213: -3318095431847354267
+    second: haerenga_57
+  - first:
+      213: -1242531552145246505
+    second: haerenga_58
+  - first:
+      213: 477601151235963630
+    second: haerenga_59
+  - first:
+      213: 7568653429582619075
+    second: haerenga_60
+  - first:
+      213: 260361786444089125
+    second: haerenga_61
+  - first:
+      213: -3885341816239582605
+    second: haerenga_62
+  - first:
+      213: 268841062268454640
+    second: haerenga_63
+  - first:
+      213: -7322773963041407468
+    second: haerenga_64
+  - first:
+      213: -6681341712665953947
+    second: haerenga_65
+  - first:
+      213: -8476997458370610693
+    second: haerenga_66
+  - first:
+      213: -7447404639692806764
+    second: haerenga_67
+  - first:
+      213: -859293240466835559
+    second: haerenga_68
+  - first:
+      213: -9103047048013933984
+    second: haerenga_69
+  - first:
+      213: 5093447447775257507
+    second: haerenga_70
+  - first:
+      213: -3022943867976505447
+    second: haerenga_71
+  - first:
+      213: 5136343094126744401
+    second: haerenga_72
+  - first:
+      213: 2829750179198277675
+    second: haerenga_73
+  - first:
+      213: -6154845745581739222
+    second: haerenga_74
+  - first:
+      213: -115780867016824920
+    second: haerenga_75
+  - first:
+      213: 4351306929330947562
+    second: haerenga_76
+  - first:
+      213: -8663751058013112125
+    second: haerenga_77
+  - first:
+      213: 7296786944912919882
+    second: haerenga_78
+  - first:
+      213: -67115078224713426
+    second: haerenga_79
+  - first:
+      213: -6654132381108375198
+    second: haerenga_80
+  - first:
+      213: -57626641345071861
+    second: haerenga_81
+  - first:
+      213: -4268946937990383559
+    second: haerenga_82
+  - first:
+      213: -7269103149739270182
+    second: haerenga_83
+  - first:
+      213: -7943304501125497886
+    second: haerenga_84
+  - first:
+      213: -7981459386545584136
+    second: haerenga_85
+  - first:
+      213: -2428764083138171946
+    second: haerenga_86
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: haerenga_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 813
+        width: 165
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a87e87f2e7a0e090800000000000000
+      internalID: -8007215544206985053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_1
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 952
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d7d72ea805c3d2f0800000000000000
+      internalID: -949198455372785707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_2
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 906
+        width: 119
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c475ed4c582a1cad0800000000000000
+      internalID: -2683685207518849204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_3
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 952
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bf15babfec432f90800000000000000
+      internalID: -6979650404980809803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_4
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 952
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 829cd2dd961326a40800000000000000
+      internalID: 5359900837276404008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_5
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 906
+        width: 120
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e1ba28c881e64a10800000000000000
+      internalID: 1893448670945915360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_6
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 929
+        width: 73
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 692408c642196c600800000000000000
+      internalID: 488237195241472662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_7
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 952
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d668846ea9209b730800000000000000
+      internalID: 4015243407089239661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_8
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 813
+        width: 165
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fa2bf1429764b830800000000000000
+      internalID: 4086004639801748216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_9
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 882
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7cbe97c26d4d90e0800000000000000
+      internalID: -2261566351218918274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_10
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 859
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02d53f8ba1c626460800000000000000
+      internalID: 7233462813538344224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_11
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 859
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b83ee67295c595f90800000000000000
+      internalID: -6964433810768338037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_12
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 906
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15731f0cceefa8fe0800000000000000
+      internalID: -1185855259055933615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_13
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 882
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa0de185090f611a0800000000000000
+      internalID: -6839014481371148118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_14
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 813
+        width: 352
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97f8f345b89de1cb0800000000000000
+      internalID: -4891232952840646791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_15
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 859
+        width: 49
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 334454013c8f97520800000000000000
+      internalID: 2700462968260609075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_16
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 673
+        width: 166
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ea27ce56a5d1d910800000000000000
+      internalID: 1860503031612123876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_17
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 743
+        width: 120
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e39d6db4adb49e60800000000000000
+      internalID: 7968202155975611366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_18
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 720
+        width: 166
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fe50995f48a84800800000000000000
+      internalID: 596912009385107186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_19
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 813
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1674ddd58b88e5620800000000000000
+      internalID: 2764797546682206049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_20
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 813
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cde67441cf14607b0800000000000000
+      internalID: -5258442963980685604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_21
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 743
+        width: 189
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38e7ab728c5c35a40800000000000000
+      internalID: 5355841845324316291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_22
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 580
+        width: 282
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 569f6ddf9b15eab30800000000000000
+      internalID: 4300464553454926181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_23
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 673
+        width: 96
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 776b7a22c8567ecf0800000000000000
+      internalID: -223098003980306825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_24
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 720
+        width: 26
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a25a416c11677f0800000000000000
+      internalID: -615284756641928609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_25
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 720
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ecb9595d69dd7360800000000000000
+      internalID: 7169125245517413603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_26
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 743
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cf1f2ff4efbc1f20800000000000000
+      internalID: 3394799209385238464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_27
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 510
+        width: 72
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec13f88337142d0b0800000000000000
+      internalID: -5705425814799044146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_28
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 696
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6437fec8e7199f810800000000000000
+      internalID: 1799629498827633478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_29
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 627
+        width: 49
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5834990de3069f3e0800000000000000
+      internalID: -2019477134995012731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_30
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 696
+        width: 49
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 337b38d13ba1597e0800000000000000
+      internalID: -1759470722821671117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_31
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 673
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2b277706c4771b20800000000000000
+      internalID: 3105078861972843310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_32
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 627
+        width: 96
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25e5d4bed60f83990800000000000000
+      internalID: -7405905232320962990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_33
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 534
+        width: 72
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 190a7010bd2326230800000000000000
+      internalID: 3630520165810544785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_34
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 627
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a110f89c8966825a0800000000000000
+      internalID: -6545869251980361446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_35
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 650
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b1312ff12a13df80800000000000000
+      internalID: -8083088172883299913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_36
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 650
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2178506c07b1421a0800000000000000
+      internalID: -6835308163269032174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_37
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 650
+        width: 49
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16eea95ef62411f40800000000000000
+      internalID: 5697408051961327201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_38
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 603
+        width: 50
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce5fc69f32f2e7730800000000000000
+      internalID: 3998685350706607596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_39
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 557
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c7c6e9cf32dc44d0800000000000000
+      internalID: -3148910868026701883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_40
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 487
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e82d1acc5637f04e0800000000000000
+      internalID: -2013263627349273970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_41
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 557
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2271bd13bcc8c5e0800000000000000
+      internalID: -1889034974012542421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_42
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 449
+        width: 168
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da76e7a7e291d8ed0800000000000000
+      internalID: -2410242538159052883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_43
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 301
+        width: 282
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82a59e89c519cd890800000000000000
+      internalID: -7431905458179712472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_44
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 580
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ea832c594dd479e0800000000000000
+      internalID: -1624430258425722135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_45
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 510
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e118d6fd965c8f460800000000000000
+      internalID: 7275782256527769886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_46
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 487
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88ce8c50d6ea80080800000000000000
+      internalID: -9220928453769368440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_47
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 510
+        width: 49
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a60afc5f21fc9ed30800000000000000
+      internalID: 4461324586227572842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_48
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 487
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98fecad3a030263a0800000000000000
+      internalID: -6673768355290353783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_49
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 510
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 772c9f2dfe5dc9510800000000000000
+      internalID: 1557354797176832631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_50
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 440
+        width: 26
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a0ec10ad76afe570800000000000000
+      internalID: 8498194080358785191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_51
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 510
+        width: 49
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bba78b88934f7bf0800000000000000
+      internalID: -324466325692372047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_52
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 394
+        width: 120
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec4ce7734ca50ecc0800000000000000
+      internalID: -3683844696397921074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_53
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 417
+        width: 73
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba3914fb2cb3539a0800000000000000
+      internalID: -6254026799915625557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_54
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 464
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92ec8028a291698c0800000000000000
+      internalID: -3992976349256430039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_55
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 397
+        width: 32
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd67685da0a282ed0800000000000000
+      internalID: -2438652972200724769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_56
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 417
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d83ddfd1dd0a60310800000000000000
+      internalID: 1370960008132285325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_57
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 394
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56064e5e8c1c3f1d0800000000000000
+      internalID: -3318095431847354267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_58
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 371
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d6fa24f224a1cee0800000000000000
+      internalID: -1242531552145246505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_59
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 347
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeabcb377b7c0a600800000000000000
+      internalID: 477601151235963630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_60
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 301
+        width: 73
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c1605a9132490960800000000000000
+      internalID: 7568653429582619075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_61
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 347
+        width: 49
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52706125aadfc9300800000000000000
+      internalID: 260361786444089125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_62
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 278
+        width: 73
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 372911c143e741ac0800000000000000
+      internalID: -3885341816239582605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_63
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 92
+        width: 282
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f6cc81958d1bb300800000000000000
+      internalID: 268841062268454640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_64
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 324
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41eff6ad0e7406a90800000000000000
+      internalID: -7322773963041407468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_65
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 324
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 569bb819c1b1743a0800000000000000
+      internalID: -6681341712665953947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_66
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 254
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf93ee389b7ab5a80800000000000000
+      internalID: -8476997458370610693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_67
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 278
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 495a38030f085a890800000000000000
+      internalID: -7447404639692806764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_68
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 208
+        width: 49
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 997741cb95d2314f0800000000000000
+      internalID: -859293240466835559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_69
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 208
+        width: 142
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 062167990fa7ba180800000000000000
+      internalID: -9103047048013933984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_70
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 231
+        width: 73
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a3a3cea77f8fa640800000000000000
+      internalID: 5093447447775257507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_71
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 68
+        width: 305
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 997a05d71985c06d0800000000000000
+      internalID: -3022943867976505447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_72
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 208
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15394f1a4d4f74740800000000000000
+      internalID: 5136343094126744401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_73
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 231
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b28163a9bca454720800000000000000
+      internalID: 2829750179198277675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_74
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 185
+        width: 73
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a23b6477768959aa0800000000000000
+      internalID: -6154845745581739222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_75
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 22
+        width: 119
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a7eca53ae9a46ef0800000000000000
+      internalID: -115780867016824920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_76
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 22
+        width: 165
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae587771992f26c30800000000000000
+      internalID: 4351306929330947562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_77
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 185
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c8b6b4b05c24c780800000000000000
+      internalID: -8663751058013112125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_78
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 68
+        width: 49
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4d0e3df015634560800000000000000
+      internalID: 7296786944912919882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_79
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 22
+        width: 73
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e29e753213f811ff0800000000000000
+      internalID: -67115078224713426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_80
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 68
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2617c9fbad5c7a3a0800000000000000
+      internalID: -6654132381108375198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_81
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 22
+        width: 166
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b05370100e4433ff0800000000000000
+      internalID: -57626641345071861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_82
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 68
+        width: 73
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9387714b067a1c4c0800000000000000
+      internalID: -4268946937990383559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_83
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 22
+        width: 143
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adf1e1cd235fe1b90800000000000000
+      internalID: -7269103149739270182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_84
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 45
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eb37a344a6b3c190800000000000000
+      internalID: -7943304501125497886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_85
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 22
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f74ebbb9f82c3190800000000000000
+      internalID: -7981459386545584136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: haerenga_86
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 22
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6db625d3feb4b4ed0800000000000000
+      internalID: -2428764083138171946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      haerenga_0: -8007215544206985053
+      haerenga_1: -949198455372785707
+      haerenga_10: 7233462813538344224
+      haerenga_11: -6964433810768338037
+      haerenga_12: -1185855259055933615
+      haerenga_13: -6839014481371148118
+      haerenga_14: -4891232952840646791
+      haerenga_15: 2700462968260609075
+      haerenga_16: 1860503031612123876
+      haerenga_17: 7968202155975611366
+      haerenga_18: 596912009385107186
+      haerenga_19: 2764797546682206049
+      haerenga_2: -2683685207518849204
+      haerenga_20: -5258442963980685604
+      haerenga_21: 5355841845324316291
+      haerenga_22: 4300464553454926181
+      haerenga_23: -223098003980306825
+      haerenga_24: -615284756641928609
+      haerenga_25: 7169125245517413603
+      haerenga_26: 3394799209385238464
+      haerenga_27: -5705425814799044146
+      haerenga_28: 1799629498827633478
+      haerenga_29: -2019477134995012731
+      haerenga_3: -6979650404980809803
+      haerenga_30: -1759470722821671117
+      haerenga_31: 3105078861972843310
+      haerenga_32: -7405905232320962990
+      haerenga_33: 3630520165810544785
+      haerenga_34: -6545869251980361446
+      haerenga_35: -8083088172883299913
+      haerenga_36: -6835308163269032174
+      haerenga_37: 5697408051961327201
+      haerenga_38: 3998685350706607596
+      haerenga_39: -3148910868026701883
+      haerenga_4: 5359900837276404008
+      haerenga_40: -2013263627349273970
+      haerenga_41: -1889034974012542421
+      haerenga_42: -2410242538159052883
+      haerenga_43: -7431905458179712472
+      haerenga_44: -1624430258425722135
+      haerenga_45: 7275782256527769886
+      haerenga_46: -9220928453769368440
+      haerenga_47: 4461324586227572842
+      haerenga_48: -6673768355290353783
+      haerenga_49: 1557354797176832631
+      haerenga_5: 1893448670945915360
+      haerenga_50: 8498194080358785191
+      haerenga_51: -324466325692372047
+      haerenga_52: -3683844696397921074
+      haerenga_53: -6254026799915625557
+      haerenga_54: -3992976349256430039
+      haerenga_55: -2438652972200724769
+      haerenga_56: 1370960008132285325
+      haerenga_57: -3318095431847354267
+      haerenga_58: -1242531552145246505
+      haerenga_59: 477601151235963630
+      haerenga_6: 488237195241472662
+      haerenga_60: 7568653429582619075
+      haerenga_61: 260361786444089125
+      haerenga_62: -3885341816239582605
+      haerenga_63: 268841062268454640
+      haerenga_64: -7322773963041407468
+      haerenga_65: -6681341712665953947
+      haerenga_66: -8476997458370610693
+      haerenga_67: -7447404639692806764
+      haerenga_68: -859293240466835559
+      haerenga_69: -9103047048013933984
+      haerenga_7: 4015243407089239661
+      haerenga_70: 5093447447775257507
+      haerenga_71: -3022943867976505447
+      haerenga_72: 5136343094126744401
+      haerenga_73: 2829750179198277675
+      haerenga_74: -6154845745581739222
+      haerenga_75: -115780867016824920
+      haerenga_76: 4351306929330947562
+      haerenga_77: -8663751058013112125
+      haerenga_78: 7296786944912919882
+      haerenga_79: -67115078224713426
+      haerenga_8: 4086004639801748216
+      haerenga_80: -6654132381108375198
+      haerenga_81: -57626641345071861
+      haerenga_82: -4268946937990383559
+      haerenga_83: -7269103149739270182
+      haerenga_84: -7943304501125497886
+      haerenga_85: -7981459386545584136
+      haerenga_86: -2428764083138171946
+      haerenga_9: -2261566351218918274
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
