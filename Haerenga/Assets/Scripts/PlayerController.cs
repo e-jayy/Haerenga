@@ -5,7 +5,10 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] private ParticleSystem deathParticles;
+
     [Header("Audio Clips")]
+    [SerializeField] private AudioClip deathAudio;
     [SerializeField] private AudioClip[] footstepAudios;
     [SerializeField] private AudioClip[] jumpAudios;
     [SerializeField] private AudioClip[] landAudios;
@@ -1004,6 +1007,18 @@ public class PlayerController : MonoBehaviour
             TakeDamage();
         }
     }
+
+    // private IEnumerator TakeDamageCoroutine()
+    // {
+        
+    // }
+    public void TakeDamage()
+    {
+        sr.color = Color.black;
+        deathParticles.Play();
+        PlayDeathAudio();
+        SceneController.Instance.ReloadScene();
+    }
     
     #endregion
     public void SetBouncePadDuration(float time)
@@ -1040,10 +1055,6 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("Horizontal Input", false);
     }
 
-    public void TakeDamage()
-    {
-        SceneController.Instance.ReloadScene();
-    }
 
     private void HandleAnimation()
     {
@@ -1092,6 +1103,12 @@ public class PlayerController : MonoBehaviour
     public void PlayRandomGrappleThrowAudio()
     {
         PlayRandomAudio(grappleThrowAudios);
+    }
+
+    public void PlayDeathAudio()
+    {
+        audioSource.pitch = Random.Range(0.85f, 1.1f);
+        audioSource.PlayOneShot(deathAudio);
     }
 
     private void PlayRandomAudio(AudioClip[] audioClips)
