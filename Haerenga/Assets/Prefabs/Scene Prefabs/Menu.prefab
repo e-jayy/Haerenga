@@ -1901,7 +1901,7 @@ MonoBehaviour:
   _starInfo3Inventory: {fileID: 2973957180257005118}
   _starInfo4Inventory: {fileID: 2331578546331838122}
   _playerController: {fileID: 0}
-  _mainMenuFirst: {fileID: 1616220211153449473}
+  _mainMenuFirst: {fileID: 5582765601332204249}
   _settingsMenuFirst: {fileID: 5469737897569258184}
   _keyboardMenuFirst: {fileID: 2845564562208046143}
   _controllerMenuFirst: {fileID: 8884762800609200089}

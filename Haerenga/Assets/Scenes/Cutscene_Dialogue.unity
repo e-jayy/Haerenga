@@ -3102,7 +3102,7 @@ MonoBehaviour:
   objectsToActivate:
   - {fileID: 1865148046}
   objectsToDeactivate: []
-  panelAudio: {fileID: 8300000, guid: cd0f8cbe301bc834eacb4b297217ea4a, type: 3}
+  panelAudio: {fileID: 8300000, guid: 4dd0dbe9db53d6641b32ec76d0dcbbbb, type: 3}
   audioVolume: 1
   audioSource: {fileID: 0}
   isRevealed: 0
@@ -5352,7 +5352,7 @@ MonoBehaviour:
   - {fileID: 1946795079}
   - {fileID: 1118077781}
   - {fileID: 981599438}
-  panelAudio: {fileID: 8300000, guid: d9a5c9017b7a809419c6a71d72fc201e, type: 3}
+  panelAudio: {fileID: 8300000, guid: 3578d1f1a4e57974ab64c02b79e6c8ea, type: 3}
   audioVolume: 1
   audioSource: {fileID: 0}
   isRevealed: 0
@@ -7417,7 +7417,7 @@ MonoBehaviour:
   objectsToActivate:
   - {fileID: 1968060912}
   objectsToDeactivate: []
-  panelAudio: {fileID: 8300000, guid: 3d65b13aa6a327540893a14b4b211cc0, type: 3}
+  panelAudio: {fileID: 8300000, guid: cc92170813679634e804750af9f2e2b3, type: 3}
   audioVolume: 0.7
   audioSource: {fileID: 0}
   isRevealed: 0
