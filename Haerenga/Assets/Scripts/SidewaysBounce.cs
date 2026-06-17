@@ -6,6 +6,8 @@ public class SideBouncePad : MonoBehaviour
 {
     [FormerlySerializedAs("bounceForce")]
     [Header("Bounce Settings")]
+    [SerializeField] private AudioClip bounceAudio;
+    [SerializeField] private AudioSource audioSource;
     [SerializeField] private float bounceForceUp;
 
     [SerializeField] private float bounceForceSideways;
@@ -28,6 +30,7 @@ public class SideBouncePad : MonoBehaviour
         if (player != null)
         {
             player.SetBouncePadDurationHorizontal(bouncePadTimer);
+            PlayBounceAudio();
             StartCoroutine(hasBouncedCoroutine());
         }
 
@@ -52,5 +55,11 @@ public class SideBouncePad : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         if (player != null)
             player.hasBounced = true;
+    }
+
+    public void PlayBounceAudio()
+    {
+        audioSource.pitch = Random.Range(0.6f, 0.9f);
+        audioSource.PlayOneShot(bounceAudio);
     }
 }

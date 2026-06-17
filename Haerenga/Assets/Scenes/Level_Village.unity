@@ -982,7 +982,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1976125678178672125, guid: caff4cff4c667cb46b0dbdbeb0bd7ab3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2331578546331838122, guid: caff4cff4c667cb46b0dbdbeb0bd7ab3, type: 3}
       propertyPath: m_IsActive
@@ -1226,7 +1226,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6559378822579615803, guid: caff4cff4c667cb46b0dbdbeb0bd7ab3, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6791946440734380632, guid: caff4cff4c667cb46b0dbdbeb0bd7ab3, type: 3}
       propertyPath: m_IsActive
@@ -142929,7 +142929,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 3d65b13aa6a327540893a14b4b211cc0, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.15
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 1
   Mute: 0
