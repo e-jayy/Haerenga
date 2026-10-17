@@ -38,10 +38,10 @@ A 2D Precision-platformer with puzzle-based progression. Explore mysterious isla
 - **Interaction introduction:** "Drip-fed" to the player as they become accustom to the games movement and its abilities.
 
 
-### Tech stack
+### Tech
 - Unity Version 6
 - C#
-- GitHub
+- Git for Version Control
 - Visual Studio
 - Adobe Premiere Pro
 
